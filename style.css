@@ -1,0 +1,140 @@
+@font-face {
+  font-family: "Google-Sans-regular";
+  src: url("/assets/fonts/ProductSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Google-Sans-medium";
+  src: url("/assets/fonts/ProductSans-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Google-Sans-bold";
+  src: url("/assets/fonts/ProductSans-Bold.ttf");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  font-family: "Google-Sans-regular", sans-serif;
+  color: black;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.title {
+  font-family: "Google-Sans-bold", sans-serif;
+  font-size: 2rem;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.title::before {
+  content: url(assets/images/star.png);
+  position: absolute;
+  bottom: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.faq-section,
+.contact-section {
+  padding: 3rem 0;
+}
+
+/* FAQ-SECTION */
+.accordion-button:not(.collapsed) {
+  background-color: white;
+  color: black;
+  box-shadow: none;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.accordion-item {
+  border: none;
+}
+
+.accordion-button {
+  font-family: "Google-Sans-medium", sans-serif;
+  font-size: 1.1rem;
+}
+
+.accordion-body {
+  padding: 0 1.25rem 0 2rem;
+}
+
+/* CONTACT-SECTION */
+iframe {
+  height: 500px;
+  width: 100%;
+}
+
+.contact-info-text {
+  text-align: center;
+  padding: 1rem 0;
+  color: #656c73;
+}
+
+.contact-info-icons {
+  flex-wrap: wrap;
+}
+
+.contact-info-icon {
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+  margin: 0.3rem 2rem;
+  flex-wrap: wrap;
+}
+
+.contact-info-icon i {
+  font-size: 30px;
+  color: white;
+  position: relative;
+  top: 7.5px;
+  left: 50%;
+  transform: translateX(-48%);
+}
+
+/* FOOTER-SECTION */
+footer {
+  padding: 2rem 0;
+  border-top: 1px solid #a1a1a1;
+}
+
+footer h4 {
+  font-size: 0.9rem;
+  text-align: center;
+  color: #5e5e5e;
+}
