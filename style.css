@@ -29,6 +29,38 @@ body {
   color: black;
 }
 
+.about iframe{
+  width: 500px;
+  height: 300px;
+}
+
+.about-video{
+  margin-left: 62px;
+}
+
+.about-us{
+  font-weight: bolder; 
+  margin-top: 29px;
+  font-family: "Google-Sans-bold", sans-serif;
+}
+
+.about-text{
+  line-height: 32px;
+}
+
+.star{
+  display: block; 
+  margin:0 auto;
+}
+
+.benefits{
+  font-family: "Google-Sans-bold", sans-serif;
+}
+
+.benefits p{
+  line-height: 25px;
+}
+
 a {
   text-decoration: none;
   color: black;
@@ -50,7 +82,7 @@ img {
   height: auto;
 }
 
-.title {
+.title{
   font-family: "Google-Sans-bold", sans-serif;
   font-size: 2rem;
   position: relative;
@@ -60,7 +92,7 @@ img {
 .title::before {
   content: url(assets/images/star.png);
   position: absolute;
-  bottom: -60px;
+  bottom: -75px;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -129,7 +161,7 @@ iframe {
 
 /* FOOTER-SECTION */
 footer {
-  padding: 2rem 0;
+  padding: .7rem 0;
   border-top: 1px solid #a1a1a1;
 }
 
