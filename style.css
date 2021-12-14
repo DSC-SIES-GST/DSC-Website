@@ -29,13 +29,9 @@ body {
   color: black;
 }
 
-.about iframe{
-  width: 500px;
-  height: 300px;
-}
-
 .about-video{
-  margin-left: 62px;
+  max-width: 500px;
+  height: 300px;
 }
 
 .about-us{
@@ -169,4 +165,22 @@ footer h4 {
   font-size: 0.9rem;
   text-align: center;
   color: #5e5e5e;
+}
+
+@media screen and (max-width:992px) {
+  .text{
+    text-align: center;
+  }
+}
+
+@media screen and (max-width:523px) {
+  .about-video{
+    height: 200px;
+  }
+  .about-text{
+    padding: 0 1.3rem;
+  }
+  .ben-img{
+    margin-top: 1rem;
+  }
 }
