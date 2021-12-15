@@ -167,11 +167,23 @@ footer h4 {
   color: #5e5e5e;
 }
 
+
+
 @media screen and (max-width:992px) {
   .text{
     text-align: center;
   }
 }
+
+/* TAB VIEW */
+
+@media screen and (min-width:768px) and (max-width:991px){
+  .about-video{
+    margin-left: 6rem;
+  }
+}
+
+/* MOBILE VIEW */
 
 @media screen and (max-width:523px) {
   .about-video{
