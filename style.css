@@ -166,23 +166,3 @@ footer h4 {
   text-align: center;
   color: #5e5e5e;
 }
-
-@media screen and (max-width:992px) {
-  .text{
-    text-align: center;
-  }
-}
-
-/* MOBILE VIEW */
-
-@media screen and (max-width:523px) {
-  .about-video{
-    height: 200px;
-  }
-  .about-text{
-    padding: 0 1.3rem;
-  }
-  .ben-img{
-    margin-top: 1rem;
-  }
-}
