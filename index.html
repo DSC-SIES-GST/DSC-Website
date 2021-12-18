@@ -1,330 +1,965 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="assets/images/dsc-favicon.png" type="image/x-icon" style="width: 50px;">
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <title>GDSC | SIES GST</title>
-  </head>
-  <body>
+    <link rel="shortcut icon" href="./assets/images/dsc-favicon.png" type="image/x-icon">
+    <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2.0/dist/flickity.min.css" />
+    <script src="https://unpkg.com/flickity@2.0/dist/flickity.pkgd.min.js"></script>
+    <title>Google Developer Student Clubs | SIES GST</title>
+</head>
 
-    <div class="container about my-5">
-      <div class="row">
-        <div class="col-lg-6">
-          <iframe class="about-video" width="400" height="300" src="https://www.youtube.com/embed/Jqf52nThBt0?controls=0"></iframe>
+<body>
+
+
+    <!--------navbar-------->
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <div>
+                    <img src="./assets/images/dsc.png" height="30px" style="margin-bottom: 15px"  />
+                    <h5 style="
+                position: absolute;
+                margin-left: 45px;
+                top: 13px;
+                color: rgb(145, 143, 143);
+                font-family: Product Sans;
+                font-size: 16px;
+              ">
+                        Google Developer Student Clubs
+                    </h5>
+                    <p style="
+                font-size: 12px;
+                font-family: Product Sans;
+                color: rgb(165, 165, 165);
+                position: absolute;
+                left: 60px;
+                top: 32px;
+              ">
+                        SIES Graduate School of Technology
+                    </p>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active nav0" aria-current="page" href="#home"
+                            style="margin-right: 20px">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active nav1" href="#store-products" style="margin-right: 20px">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active nav2" target="_blank"
+                            href="https://github.com/orgs/DSC-SIES-GST/repositories"
+                            style="margin-right: 20px">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active nav3" href="#blogs" style="margin-right: 20px">Blogs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active nav3" href="#events" style="margin-right: 20px">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active nav4" href="#faq-section" style="margin-right: 20px">FAQs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active nav5" href="#contact" style="margin-right: 20px">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="col-lg-6">
-          <h3 class="text-center about-us">About Us</h3>
-          <img class="star" src="./assets/images/star.png" alt="star">  
-          <!-- width="150" height="45" -->
-            <h7 class="about-text">We are a team that excels in raising and transmitting technical and leadership skills in students. The GDSC program is a mainstream channel through which Google providers development skills. We train our students to learn development skills, and solve technical problems through technology. 
-            We collaborate with different institutions with contribution of faculty members also taken into heed.</h7>
+    </nav>
+
+    <!---------------------starting of header--------------------->
+    <div class="container" id="home">
+        <div class="row header">
+            <div class="col-lg-6 text-center leftheader mb-3" style="height: 300px">
+                <img src="./assets/images/dsc_logo.jpg" style="height: 40%" alt="" />
+                <h2>
+                    Developer Students Club<br />
+                    SIES Graduate School of Technology
+                </h2>
+                <br />
+                <a href="https://bit.ly/GDSCSIESGSTCommunityPage" target="_blank" class="button">Join Us</a>
+
+            </div>
+            <div class="col-lg-6 mb-sm-5 rightheader">
+                <img src="./assets/images/image-removebg-preview.png" style="width: 100%" class="" alt="" />
+            </div>
         </div>
-      </div>
     </div>
 
-    <div class="container" style="margin-top: 5rem;">
-      <h3 class="text-center benefits">Benefits of Joining DSC</h3>
-      <img class="star" src="./assets/images/star.png" alt="star">
 
-      <div class="row text-center my-3">
-      <div class="col-lg-4">
-        <svg class="star" alt="connect" width="30" height="30" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-          <rect width="50" height="50" fill="url(#pattern0)"/>
-          <defs>
-          <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-          <use xlink:href="#image0_51_8" transform="scale(0.0333333)"/>
-          </pattern>
-          <image id="image0_51_8" width="30" height="30" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABmJLR0QA/wD/AP+gvaeTAAADnElEQVRIie2WTWhcVRTHf+fOR+NE7TRxxoimIQp+FUE7mYg2lefMoNhFQatotYYuxFJcqKh0ocWFEEpQKLVVRMSFtApxI6hImpnEkliSSbQLFbvQVCjVzKuJ1Y5Nk5l3XGQmna83U6O46lnde+7//H/33Md798Gl+J9CaiUziegrKC8BNqqf+xeaXg2Ojs5djOFMLHKDYPoRegAjsC+UTL/mCj4Z7271oweATcAVpSKFiXDLXxtl4LuFetDTsbuudSR3DLiqYumkB3N/a3L8+2LCFAd+dD/waCW0sLtu+7fA43VbBfKS310DCnCdg/aVJgzA7z09axQequOpIrqqEVjQ610NVO8unXsBzvvmbxXEXwe7O5RKv6OW5bU92WeAXuAW4AwifeGhiTcBsvnmzc3es5+gcl+NXV1ZOjUAYrjGHcq3odaOPRqJ+Gzv2c+AvcB64DKgDdV9M/HozzOJ6M7OkZF5x/ifBP6o4TNdDS50XitE5H0ZGMjbq2VHzU6W6teK8lYmEelpG/wqAzpQQ2RKp4WJeFwblvxEQfOwm2ZZq55thaKxqjXIVYFVcX2+xnC6sOO2RmAR2gHUyKkqH8f0VoFBwm5m+by0F4Y/NQIXNcZxWiryR0LD41PVYKMRVysxGwAEDjbEqvMlgCNS5icmt7VSagCyueZeEXlClXeBT8uKoLUwbHzUmLUAoiyW5kOHv6k6ei9A58jIPHAIOKSRiM8OmuVPY2hN9gUAFWccNTlc3gCFBYymANRoh+iFa8COdW0NpSY/rOp4ufiRdf5M0OwvzdmzgQPTltUUHpoaRXndvVveCB9OH5uzbg+KygNlviIHM/Hox5l498Yy8LRlNdmJruft2cCPAk9XeD4VMNn3APwLq/qBEzW4J3z5xX6ARePbBQSr98UW0CN2PPqBWpZXTsXu6PCKdxC40a0bQIFN4WT6C/verpvUyA9lro7eHBqePG4nuixVGQR8dbwQeNH4xLO3AbRIfhAgNDx5vHKtmFOV7Y2gBa9txkHuaSBKGbjz6mR6B8CvichtlZpiLpxMb1dlA+hwA3ZnzT+QWjFtWU3NJvsYQh9UXSq/oLx8/pz3o/ajR89djF9DcMZadzkmsAthJxfeaTe3OVTelnnfntDY2J8rBs8mIqtzalIsXYP/JL72ihNrGZo64yYwbgsAeUeeWwEUYH1ezbP1BHXBKrJlBdClWrRubV0w0LFSMMi/qL0U/2H8DT2WKkxWKC8jAAAAAElFTkSuQmCC"/>
-          </defs>
-        </svg>
-          <h3 class="text-center my-3">Connect</h3>
-          <!-- paragraph style="width: 300px; margin-left: 50px;" -->
-          <p>Meet students interested in developer technologies at your university. All are welcome, including those with diverse backgrounds and different majors.</p>
-      </div>
-  
-        <div class="col-lg-4">
-          <img class="star" src="./assets/images/learn.png" alt="learn" width="30" height="30">
-            <h3 class="text-center my-3">Learn</h3>
-            <p>Learn about a range of technical topics and gain new skills through hands-on workshops, events, talks, and project-building activities - both online and in-person.</p>
+    <!-- About Section -->
+
+    <div class="container about mt-5" data-aos="fade-up">
+        <div class="row">
+            <div class="col-lg-6 d-flex justify-content-md-center">
+                <iframe class="about-video h-auto mx-auto"
+                    src="https://www.youtube.com/embed/Jqf52nThBt0?controls=0"></iframe>
+            </div>
+            <div class="col-lg-6 text-lg-start text-center mt-5 mt-lg-0">
+                <h3 class="title">About Us</h3>
+                <p class="about-text px-2">We are a team that excels in raising and transmitting technical and
+                    leadership skills in students. The GDSC program is a mainstream channel through which Google
+                    providers development skills. We train our students to learn development skills, and solve
+                    technical problems through technology.
+                    We collaborate with different institutions with contribution of faculty members also taken into
+                    heed.</p>
+            </div>
         </div>
-  
-        <div class="col-lg-4">
-          <img class="star" src="./assets/images/grow.png" alt="grow" width="30" height="30">
-          <h3 class="text-center my-3">Grow</h3>
-          <p>Apply new learnings to build great solutions for local problems. Advance your skills, career, and network. Give back to your community by helping others learn, too.</p>
-        </div>
-      </div>
     </div>
+
+    <div class="container mt-2 mt-lg-5">
+        <div class="container">
+            <br />
+            <h2 class="title">
+                Benefits of Joining DSC
+            </h2>
+        </div>
+
+        <div class="row text-center my-2 pt-3 pb-4">
+            <div class="col-lg-4">
+                <img class="star mt-2 images" src="./assets/images/connect.png" alt="learn" width="35" height="35">
+                <h3 class="text-center my-3">Connect</h3>
+                <p class="about-text px-2">Meet students interested in developer technologies at your university.
+                    All are welcome, including those with diverse backgrounds and different majors.</p>
+            </div>
+
+            <div class="col-lg-4">
+                <img class="star mt-2 images" src="./assets/images/learn.png" alt="learn" width="35" height="35">
+                <h3 class="text-center my-3">Learn</h3>
+                <p class="about-text px-2">Learn about a range of technical topics and gain new skills through
+                    hands-on workshops, events, talks, and project-building activities - both online and in-person.
+                </p>
+            </div>
+
+            <div class="col-lg-4">
+                <img class="star mt-2 images" src="./assets/images/grow.png" alt="grow" width="35" height="35">
+                <h3 class="text-center my-3">Grow</h3>
+                <p class="about-text px-2">Apply new learnings to build great solutions for local problems. Advance
+                    your skills, career, and network. Give back to your community by helping others learn, too.</p>
+            </div>
+        </div>
+    </div><br>
+
+    <!--domains that we train-->
+
+    <div class="container">
+        <br />
+        <h2 class="title">
+            Domains that we train
+        </h2>
+    </div>
+    <div class="carousel-wrapper">
+        <div class="carousel" data-flickity>
+            <div class="carousel-cell">
+                <img class="card-img mb-4" src="./assets/images/undraw_details_8k13.png">
+                <h3> Android Development</h3>
+            </div>
+            <div class="carousel-cell">
+                <img class="card-img mb-4" src="./assets/images/undraw_programming_re_kg9v.png" />
+                <h3>Web Development</h3>
+            </div>
+            <div class="carousel-cell">
+                <img class="card-img mb-4" src="./assets/images/undraw_artificial_intelligence_re_enpp (1).png">
+                <h3> AI & ML</h3>
+            </div>
+            <div class="carousel-cell">
+                <img class="card-img mb-3" src="./assets/images/undraw_cloud_sync_re_02p1.png" />
+                <h3>Cloud Computing</h3>
+            </div>
+            <div class="carousel-cell">
+                <img class="card-img mb-4" src="./assets/images/undraw_art_lover_re_fn8g.png" />
+                <h3> Design</h3>
+            </div>
+            <div class="carousel-cell">
+                <img class="card-img mb-4" src="./assets/images/undraw_pair_programming_re_or4x.png" />
+                <h3> Competitive Programming</h3>
+            </div>
+        </div>
+    </div>
+
+    <br><br>
+    <br /><br />
+
+    <!-- ----------------------starting of types of session------------------ -->
+    <div class="container">
+        <br><br>
+        <h2 class="title">Types of Session
+    </div>
+
+    <div class="row text-center justify-content-center ">
+        <div class="col-xl-6 col-lg-8">
+        </div>
+    </div>
+
+    <div class="row pt-5 mb-5">
+        <div class="col">
+            <div class="timeline-steps">
+                <div class="timeline-step">
+                    <div class="timeline-content">
+                        <div class="inner-circle"></div>
+                        <p class="h6 mt-3 mb-1 challenge">Google Solution Challenge</p>
+
+                    </div>
+                </div>
+                <div class="timeline-step">
+                    <div class="timeline-content">
+                        <div class="inner-circle"></div>
+                        <p class="h6 mt-3 mb-1 workshops">Hands-on Workshops</p>
+
+                    </div>
+                </div>
+                <div class="timeline-step">
+                    <div class="timeline-content">
+                        <div class="inner-circle"></div>
+                        <p class="h6 mt-3 mb-1 talks">Expert Tech Talks</p>
+                    </div>
+                </div>
+                <div class="timeline-step">
+                    <div class="timeline-content">
+                        <div class="inner-circle"></div>
+                        <p class="h6 mt-3 mb-1 jams">Study Jams</p>
+
+                    </div>
+                </div>
+                <div class="timeline-step">
+                    <div class="timeline-content">
+                        <div class="inner-circle"></div>
+                        <p class="h6 mt-3 mb-1 camps">Bootcamps</p>
+
+                    </div>
+                </div>
+                <div class="timeline-step ">
+                    <div class="timeline-content">
+                        <div class="inner-circle"></div>
+                        <p class="h6 mt-3 mb-1 explore">Explore ML</p>
+
+                    </div>
+                </div>
+                <div class="timeline-step">
+                    <div class="timeline-content">
+                        <div class="inner-circle"></div>
+                        <p class="h6 mt-3 mb-1 roadmap">Roadmap Sessions</p>
+
+                    </div>
+                </div>
+                <div class="timeline-step">
+                    <div class="timeline-content">
+                        <div class="inner-circle"></div>
+                        <p class="h6 mt-3 mb-1 tech">Tech Programs</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <!---------------------starting of event page--------------------->
+
+    <div class="container" id="events">
+        <br />
+        <h2 class="title">
+            Various Events
+        </h2>
+    </div>
+    <div class="carousel-wrapper mb-4">
+        <div class="carousel" data-flickity>
+
+            <div class="carousel-cell event-image">
+
+                <img class="card-img event-img" src="assets/images/android2.jpeg" />
+                <h3 class="mt-3 event-heading">Android Study Jams</h3>
+                <div class="text-center"><a type="button" class="button event-btn p-1 px-3 mt-3"
+                        href="https://gdsc.community.dev/events/details/developer-student-clubs-sies-graduate-school-of-technology-navi-mumbai-presents-android-study-jams-info-session/"
+                        target="_blank">Learn More</a>
+                </div>
+            </div>
+            <div class="carousel-cell event-image">
+
+                <img class="card-img event-img" src="assets/images/30-Days-of-Google-Cloud-Leaderboard.png" />
+                <h3 class="mt-3  event-heading">30 Days GCP Info</h3>
+                <div class="text-center"><a type="button" class="button event-btn p-1 px-3 mt-3"
+                        href="https://gdsc.community.dev/events/details/developer-student-clubs-sies-graduate-school-of-technology-navi-mumbai-presents-30daysofgooglecloud-info-session/"
+                        target="_blank">Learn More</a>
+                </div>
+            </div>
+
+            <div class="carousel-cell event-image">
+                <img class="card-img event-img" src="assets/images/HACKTOBER.svg" />
+                <h3 class="mt-3 event-heading">Hacktober Fest</h3>
+                <div class="text-center"><a type="button" class="button event-btn p-1 px-3 mt-3"
+                        href="https://gdsc.community.dev/events/details/developer-student-clubs-sies-graduate-school-of-technology-navi-mumbai-presents-hacktoberfest21-siesgst/"
+                        target="_blank">Learn More</a>
+                </div>
+            </div>
+
+            <div class="carousel-cell event-image">
+                <img class="card-img event-img" src="assets/images/traas (1).png" />
+                <h3 class="mt-3 event-heading">Google Solution Challenge</h3>
+                <div class="text-center"><a type="button" class="button event-btn p-1 px-3 mt-3"
+                        href="https://gdsc.community.dev/events/details/developer-student-clubs-sies-graduate-school-of-technology-presents-design-2-sustain-the-design-sprint/"
+                        target="_blank">Learn More</a>
+                </div>
+            </div>
+            <div class="carousel-cell event-image">
+                <img class="card-img event-img" src="assets/images/DSC WOW.png" />
+                <h3 class="mt-3 event-heading">DSC WOW - Hackathon</h3>
+                <div class="text-center"><a type="button" class="button event-btn p-1 px-3 mt-3"
+                        href="https://gdsc.community.dev/events/details/developer-student-clubs-sies-graduate-school-of-technology-presents-dsc-wow-indias-biggest-collaboration-prizes-worth-10-lakhs/"
+                        target="_blank">Learn More</a>
+                </div>
+            </div>
+            <div class="carousel-cell event-image">
+                <img class="card-img event-img" src="assets/images/Blockchain.png" />
+                <h3 class="mt-3 event-heading">Blockchain Techtalk</h3>
+                <div class="text-center"><a type="button" class="button event-btn p-1 px-3 mt-3"
+                        href="https://gdsc.community.dev/events/details/developer-student-clubs-sies-graduate-school-of-technology-presents-blockchain-technology-csi-siesgst-x-dsc-siesgst/"
+                        target="_blank">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br /><br />
+
+
+    <!--------------our team--------------------->
+    <section id="store-products">
+        <div class="container pb-5 mt-5">
+            <h2 class="title">
+                Our Teams
+            </h2>
+        </div>
+        <center>
+            <div class="row team mx-auto justify-content-center mb-5">
+                <div class="col-lg-1 col-md-3 col-sm-6 bt  btn " data-filter="Web">
+                    Web
+                </div>
+                <div class="col-lg-1 col-md-3 col-sm-6 bt  btn " data-filter="App">
+                    Android
+                </div>
+                <div class="col-lg-1 col-md-3 col-sm-6 bt  btn " data-filter="Design">
+                    Design
+                </div>
+                <div class="col-lg-1 col-md-3 col-sm-6 bt  btn " data-filter="ML">
+                    ML & AI
+                </div>
+                <div class="col-lg-1 col-md-3 col-sm-6 bt  btn " data-filter="Social">
+                    Social Media
+                </div>
+                <div class="col-lg-1 col-md-3 col-sm-6 bt  btn" data-filter="Admin">
+                    Administration
+                </div>
+                <div class="col-lg-1 col-md-3 col-sm-6 bt  btn " data-filter="Heads">
+                    Heads
+                </div>
+            </div>
+        </center>
+        </div>
+
+
+        <!---------------------leads card structure--------------------->
+        <div class="container">
+            <center>
+                <div class="row Headss justify-content-center">
+                    <div class="col-lg-3 col-md-4 col-sm-6 mt-4 store-product Heads">
+                        <div class="card " style="width: 12rem">
+                            <div class="img1 text-center">
+                                <img src="./assets/leads/belwadi_anirudh.jpg" class="card-img-top w-75 mt-2"
+                                    style="border-radius: 50%; padding: 2%" alt="..." />
+                            </div>
+                            <div class="card-body product-details">
+                                <h6>Anirudh Belwadi</h6>
+                                <p class="card-text position">GDSC Lead</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6 mt-4 store-product Heads">
+                        <div class="card " style="width: 12rem">
+                            <div class="img1 text-center">
+                                <img src="./assets/leads/anushree_kolhe_bBm9F5v.jpg" class="card-img-top w-75 mt-2"
+                                    style="border-radius: 50%; padding: 2%" alt="..." />
+                            </div>
+                            <div class="card-body product-details">
+                                <h6>Anushree Kolhe</h6>
+                                <p class="card-text position">ML & AI Lead</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6 mt-4 store-product Heads">
+                        <div class="card " style="width: 12rem">
+                            <div class="img1 text-center">
+                                <img src="./assets/leads/kriti_kakkar_xSPKqB0.jpg" class="card-img-top w-75 mt-2"
+                                    style="border-radius: 50%; padding: 2%" alt="..." />
+                            </div>
+                            <div class="card-body product-details">
+                                <h6>Kriti Kakkar</h6>
+                                <p class="card-text position">
+                                    Administration and Management Lead
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6 mt-4 store-product Heads">
+                        <div class="card " style="width: 12rem">
+                            <div class="img1 text-center">
+                                <img src="./assets/leads/ninad_deshpande.jpg" class="card-img-top w-75 mt-2"
+                                    style="border-radius: 50%; padding: 2%" alt="..." />
+                            </div>
+                            <div class="card-body product-details">
+                                <h6>Ninad Deshpande</h6>
+                                <p class="card-text position">Design Lead</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6 mt-4 store-product Heads">
+                        <div class="card " style="width: 12rem">
+                            <div class="img1 text-center">
+                                <img src="./assets/leads/pallavi_lodhi.jpg" class="card-img-top w-75 mt-2"
+                                    style="border-radius: 50%; padding: 2%" alt="..." />
+                            </div>
+                            <div class="card-body product-details">
+                                <h6>Pallavi Lodhi</h6>
+                                <p class="card-text position">Web & App Dev Lead</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6 mt-4 store-product Heads">
+                        <div class="card " style="width: 12rem">
+                            <div class="img1 text-center">
+                                <img src="./assets/leads/vishal_naregal.jpg" class="card-img-top w-75 mt-2"
+                                    style="border-radius: 50%; padding: 2%" alt="..." />
+                            </div>
+                            <div class="card-body product-details">
+                                <h6>Vishal Naregal</h6>
+                                <p class="card-text position">
+                                    Social Media & Publicity Lead
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </center>
+        </div>
+
+        <!---------------------web team card structure--------------------->
+
+        <div class="container">
+            <center>
+                <div class="row Webs justify-content-center">
+                    <div class="col-lg-3 col-md-4 col-sm-6 mt-4 store-product Web">
+                        <div class="card " style="width: 12rem">
+                            <div class="img1 text-center">
+                                <img src="./assets/web/emaad_sayed.png" class="card-img-top w-75 mt-2"
+                                    style="border-radius: 50%; padding: 2%" alt="..." />
+                            </div>
+                            <div class="card-body product-details">
+                                <h6>Emaad Sayed</h6>
+                                <p class="card-text position">Web Development Coordinator</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6 mt-4 store-product Web">
+                        <div class="card " style="width: 12rem">
+                            <div class="img1 text-center">
+                                <img src="./assets/web/suchit_deshmukh.jfif" class="card-img-top w-75 mt-2"
+                                    style="border-radius: 50%; padding: 2%" alt="..." />
+                            </div>
+                            <div class="card-body product-details">
+                                <h6>Suchit Deshmukh</h6>
+                                <p class="card-text position">Web Development Coordinator</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6 mt-4 store-product Web">
+                        <div class="card " style="width: 12rem">
+                            <div class="img1 text-center">
+                                <img src="./assets/web/sarika_hire_4l8eKDM.jpg" class="card-img-top w-75 mt-2"
+                                    style="border-radius: 50%; padding: 2%" alt="..." />
+                            </div>
+                            <div class="card-body product-details">
+                                <h6>Sarika Hire</h6>
+                                <p class="card-text position">Web Development Coordinator</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6 mt-4 store-product Web">
+                        <div class="card " style="width: 12rem">
+                            <div class="img1 text-center">
+                                <img src="./assets/web/kartik_sharma_JyYzxjI.jpg" class="card-img-top w-75 mt-2"
+                                    style="border-radius: 50%; padding: 2%" alt="..." />
+                            </div>
+                            <div class="card-body product-details">
+                                <h6>Kartik Sharma</h6>
+                                <p class="card-text position">Web Development Coordinator</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6 mt-4 store-product Web">
+                        <div class="card " style="width: 12rem">
+                            <div class="img1 text-center">
+                                <img src="./assets/web/yash_bhoite_2qONgI3.jpg" class="card-img-top w-75 mt-2"
+                                    style="border-radius: 50%; padding: 2%" alt="..." />
+                            </div>
+                            <div class="card-body product-details">
+                                <h6>Yash Bhoite</h6>
+                                <p class="card-text position">Web Development Coordinator</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6 mt-4 store-product Web">
+                        <div class="card " style="width: 12rem">
+                            <div class="img1 text-center">
+                                <img src="./assets/web/sahil_raut.jpg" class="card-img-top w-75 mt-2"
+                                    style="border-radius: 50%; padding: 2%" alt="..." />
+                            </div>
+                            <div class="card-body product-details">
+                                <h6>Sahil Raut</h6>
+                                <p class="card-text position">Web Development Coordinator</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </center>
+        </div>
+
+        <!---------------------app team card structure--------------------->
+
+        <div class="container">
+            <center>
+                <div class="row Apps justify-content-center">
+                    <div class="col-lg-3 col-md-4 col-sm-6  mt-4 store-product App">
+                        <div class="card " style="width: 12rem">
+                            <div class="img1 text-center">
+                                <img src="./assets/app/vedant_bhamare_83pGrZ0.jpeg" class="card-img-top w-75 mt-2"
+                                    style="border-radius: 50%; padding: 2%" alt="..." />
+                            </div>
+                            <div class="card-body product-details">
+                                <h6>Vedant Bhamare</h6>
+                                <p class="card-text position">App Development Coordinator</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6  mt-4 store-product App">
+                        <div class="card " style="width: 12rem">
+                            <div class="img1 text-center">
+                                <img src="./assets/app/manghinipun_siesgst_DQAy7cd.jpg" class="card-img-top w-75 mt-2"
+                                    style="border-radius: 50%; padding: 2%" alt="..." />
+                            </div>
+                            <div class="card-body product-details">
+                                <h6>Nipun Manghi</h6>
+                                <p class="card-text position">App Development Coordinator</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6  mt-4 store-product App">
+                        <div class="card " style="width: 12rem">
+                            <div class="img1 text-center">
+                                <img src="./assets/app/rohitraghuram_siesgst.png" class="card-img-top w-75 mt-2"
+                                    style="border-radius: 50%; padding: 2%" alt="..." />
+                            </div>
+                            <div class="card-body product-details">
+                                <h6>Rohit Raghuram</h6>
+                                <p class="card-text position">App Development Coordinator</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </center>
+        </div>
+
+        <!---------------------Design Team card structure--------------------->
+
+        <div class="container">
+            <center>
+                <div class="row Designs justify-content-center">
+                    <div class="col-lg-3 col-md-4 col-sm-6 mt-4 store-product Design">
+                        <div class="card " style="width: 12rem">
+                            <div class="img1 text-center">
+                                <img src="./assets/design/sucharya_deshmukh_UMGMWtS.jpeg" class="card-img-top w-75 mt-2"
+                                    style="border-radius: 50%; padding: 2%" alt="..." />
+                            </div>
+                            <div class="card-body product-details">
+                                <h6>Sucharya Deshmukh</h6>
+                                <p class="card-text position">Design Coordinator</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </center>
+        </div>
+
+        <!---------------------ML & AI team card structure--------------------->
+
+        <div class="container">
+            <center>
+                <div class="row MLs justify-content-center">
+                    <div class="col-lg-3 col-md-4 col-sm-6 mt-4 store-product ML">
+                        <div class="card " style="width: 12rem">
+                            <div class="img1 text-center">
+                                <img src="./assets/ml&ai/Mehul Aswar.jpeg" class="card-img-top w-75 mt-2"
+                                    style="border-radius: 50%; padding: 2%" alt="..." />
+                            </div>
+                            <div class="card-body product-details">
+                                <h6>Mehul Aswar</h6>
+                                <p class="card-text position">ML & AI Coordinator</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6 mt-4 store-product ML">
+                        <div class="card " style="width: 12rem">
+                            <div class="img1 text-center">
+                                <img src="./assets/ml&ai/vaishnavi_dixit.jpg" class="card-img-top w-75 mt-2"
+                                    style="border-radius: 50%; padding: 2%" alt="..." />
+                            </div>
+                            <div class="card-body product-details">
+                                <h6>Vaishnavi Dixit</h6>
+                                <p class="card-text position">ML & AI Coordinator</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6 mt-4 store-product ML">
+                        <div class="card " style="width: 12rem">
+                            <div class="img1 text-center">
+                                <img src="./assets/ml&ai/shweta_madhale_o1vQqxg.jpg" class="card-img-top w-75 mt-2"
+                                    style="border-radius: 50%; padding: 2%" alt="..." />
+                            </div>
+                            <div class="card-body product-details">
+                                <h6>Shweta Madhale</h6>
+                                <p class="card-text position">ML & AI Coordinator</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6 mt-4 store-product ML">
+                        <div class="card " style="width: 12rem">
+                            <div class="img1 text-center">
+                                <img src="./assets/ml&ai/yash_patil_3RNnKOD.jpg" class="card-img-top w-75 mt-2"
+                                    style="border-radius: 50%; padding: 2%" alt="..." />
+                            </div>
+                            <div class="card-body product-details">
+                                <h6>Yash Patil</h6>
+                                <p class="card-text position">ML & AI Coordinator</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6 mt-4 store-product ML">
+                        <div class="card " style="width: 12rem">
+                            <div class="img1 text-center">
+                                <img src="./assets/ml&ai/sahil_ashok_wake.jpg" class="card-img-top w-75 mt-2"
+                                    style="border-radius: 50%; padding: 2%" alt="..." />
+                            </div>
+                            <div class="card-body product-details">
+                                <h6>Sahil Wake</h6>
+                                <p class="card-text position">ML & AI Coordinator</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </center>
+        </div>
+
+        <!---------------------Social Media card structure--------------------->
+
+        <div class="container">
+            <center>
+                <div class="row Socials justify-content-center">
+                    <div class="col-lg-3 col-md-4 col-sm-6 mt-4  store-product Social">
+                        <div class="card" style="width: 12rem">
+                            <div class="img1 text-center">
+                                <img src="./assets/social media/pranathy_mudaliyar.jpg" class="card-img-top w-75 mt-2"
+                                    style="border-radius: 50%; padding: 2%" alt="..." />
+                            </div>
+                            <div class="card-body product-details">
+                                <h6>Pranathy Mudaliyar</h6>
+                                <p class="card-text position">
+                                    Social Media and Publicity Coordinator
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </center>
+        </div>
+
+        <!---------------------Administration & Management card structure--------------------->
+
+        <div class="container">
+            <center>
+                <div class="row Admins justify-content-center">
+                    <div class="col-lg-3 col-md-4 col-sm-6 mt-4 store-product Admin">
+                        <div class="card " style="width: 12rem">
+                            <div class="img1 text-center">
+                                <img src="./assets/admin/shreyash_kadam_2FoRsTf.jpg" class="card-img-top w-75 mt-2"
+                                    style="border-radius: 50%; padding: 2%" alt="..." />
+                            </div>
+                            <div class="card-body product-details">
+                                <h6>Shreyash Kadam</h6>
+                                <p class="card-text position">
+                                    Administration and Management Coordinator
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6 mt-4 store-product Admin">
+                        <div class="card " style="width: 12rem">
+                            <div class="img1 text-center">
+                                <img src="./assets/admin/khush_patil.png" class="card-img-top w-75 mt-2"
+                                    style="border-radius: 50%; padding: 2%" alt="..." />
+                            </div>
+                            <div class="card-body product-details">
+                                <h6>Khush Patil</h6>
+                                <p class="card-text position">
+                                    Administration and Management Coordinator
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6 mt-4 store-product Admin">
+                        <div class="card " style="width: 12rem">
+                            <div class="img1 text-center">
+                                <img src="./assets/admin/saliannishit_sies_gst_EUxhpLe.jpeg"
+                                    class="card-img-top w-75 mt-2" style="border-radius: 50%; padding: 2%" alt="..." />
+                            </div>
+                            <div class="card-body product-details">
+                                <h6>Nishit Salian</h6>
+                                <p class="card-text position">
+                                    Administration and Management Coordinator
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6 mt-4 store-product Admin">
+                        <div class="card " style="width: 12rem">
+                            <div class="img1 text-center">
+                                <img src="./assets/admin/varun sondur.jfif" class="card-img-top w-75 mt-2"
+                                    style="border-radius: 50%; padding: 2%" alt="..." />
+                            </div>
+                            <div class="card-body product-details">
+                                <h6>Varun Sondur</h6>
+                                <p class="card-text position">
+                                    Administration and Management Coordinator
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </center>
+        </div>
+    </section>
+
 
     <section class="faq-section" id="faq-section">
-      <div class="container">
-        <div class="text-center">
-          <h1 class="title">Frequently Asked Questions</h1>
-        </div>
+        <div class="container mt-4">
+            <div class="text-center">
+                <h1 class="title">Frequently Asked Questions</h1>
+            </div>
 
-        <div class="row pt-5 justify-content-around">
-          <div
-            class="
+            <div class="row pt-5 justify-content-around">
+                <div class="
               col-lg-5 col-sm-12
               pt-3 pt-lg-0
               order-2
               d-flex
               align-items-center
               justify-content-center
-            "
-          >
-            <img src="assets/images/faq.png" id="faq" height="90%" alt="faq" />
-          </div>
-          <div class="col-lg-5 col-sm-12 order-lg-2">
-            <div class="accordion" id="accordionExample">
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingOne">
-                  <button
-                    class="accordion-button"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseOne"
-                    aria-expanded="true"
-                    aria-controls="collapseOne"
-                  >
-                    Frequently Asked Question #1
-                  </button>
-                </h2>
-                <div
-                  id="collapseOne"
-                  class="accordion-collapse collapse show"
-                  aria-labelledby="headingOne"
-                  data-bs-parent="#accordionExample"
-                >
-                  <div class="accordion-body">
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Vivamus eget facilisis sem. Aliquam tempus lorem vel
-                      suscipit suscipit. Vestibulum id dapibus tellus. Cras
-                      semper auctor commodo. In facilisis lorem est, nec varius
-                      nulla semper id. Sed aliquam nunc non est accumsan ornare.
-                      Aenean bibendum, tellus id condimentum volutpat, tellus
-                      leo maximus nisi, gravida vehicula erat urna ac sapien.
-                    </p>
-                  </div>
+            ">
+                    <img src="assets/images/faq.png" class="images" id="faq" height="90%" alt="faq" />
                 </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingTwo">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseTwo"
-                    aria-expanded="false"
-                    aria-controls="collapseTwo"
-                  >
-                    Frequently Asked Question #2
-                  </button>
-                </h2>
-                <div
-                  id="collapseTwo"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="headingTwo"
-                  data-bs-parent="#accordionExample"
-                >
-                  <div class="accordion-body">
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Vivamus eget facilisis sem. Aliquam tempus lorem vel
-                      suscipit suscipit. Vestibulum id dapibus tellus. Cras
-                      semper auctor commodo. In facilisis lorem est, nec varius
-                      nulla semper id. Sed aliquam nunc non est accumsan ornare.
-                      Aenean bibendum, tellus id condimentum volutpat, tellus
-                      leo maximus nisi, gravida vehicula erat urna ac sapien.
-                    </p>
-                  </div>
+                <div class="col-lg-5 col-sm-12 order-lg-2">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Who Should Join DSC SIESGST?
+                                </button>
+                            </h2>
+
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>
+                                        University students (undergraduate or post-graduate) who are enthusiastic to
+                                        learn development skills, passionate about solving problems with technology,
+                                        inspired to become changemakers.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    I'm not an SIES GST student, can I still join?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>
+                                        Come! It’s OK as long as you don’t wreak havoc here. Crash into our Discord
+                                        server while you’re at it.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Can I join even though I'm not from a Computer Science background?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>
+                                        Absolutely yes, as long as you have the passion for building a better tomorrow
+                                        with technology.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    What are the perks of joining a GDSC?
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>
+                                        You get access to Google Developer resources and opportunities for free and also
+                                        helps to grow your personal and professional network.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    What does the core team do? and how do I apply to join the core team?
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>
+                                        The core team is a group of contributing members who are responsible for GSDC
+                                        SIES GST's operations, including the planning and execution of activities and
+                                        events.We take interviews for the core team on annual basis.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingThree">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseThree"
-                    aria-expanded="false"
-                    aria-controls="collapseThree"
-                  >
-                    Frequently Asked Question #3
-                  </button>
-                </h2>
-                <div
-                  id="collapseThree"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="headingThree"
-                  data-bs-parent="#accordionExample"
-                >
-                  <div class="accordion-body">
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Vivamus eget facilisis sem. Aliquam tempus lorem vel
-                      suscipit suscipit. Vestibulum id dapibus tellus. Cras
-                      semper auctor commodo. In facilisis lorem est, nec varius
-                      nulla semper id. Sed aliquam nunc non est accumsan ornare.
-                      Aenean bibendum, tellus id condimentum volutpat, tellus
-                      leo maximus nisi, gravida vehicula erat urna ac sapien.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingThree">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseFour"
-                    aria-expanded="false"
-                    aria-controls="collapseFour"
-                  >
-                    Frequently Asked Question #4
-                  </button>
-                </h2>
-                <div
-                  id="collapseFour"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="headingFour"
-                  data-bs-parent="#accordionExample"
-                >
-                  <div class="accordion-body">
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Vivamus eget facilisis sem. Aliquam tempus lorem vel
-                      suscipit suscipit. Vestibulum id dapibus tellus. Cras
-                      semper auctor commodo. In facilisis lorem est, nec varius
-                      nulla semper id. Sed aliquam nunc non est accumsan ornare.
-                      Aenean bibendum, tellus id condimentum volutpat, tellus
-                      leo maximus nisi, gravida vehicula erat urna ac sapien.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingThree">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseFive"
-                    aria-expanded="false"
-                    aria-controls="collapseFive"
-                  >
-                    Frequently Asked Question #5
-                  </button>
-                </h2>
-                <div
-                  id="collapseFive"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="headingFive"
-                  data-bs-parent="#accordionExample"
-                >
-                  <div class="accordion-body">
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Vivamus eget facilisis sem. Aliquam tempus lorem vel
-                      suscipit suscipit. Vestibulum id dapibus tellus. Cras
-                      semper auctor commodo. In facilisis lorem est, nec varius
-                      nulla semper id. Sed aliquam nunc non est accumsan ornare.
-                      Aenean bibendum, tellus id condimentum volutpat, tellus
-                      leo maximus nisi, gravida vehicula erat urna ac sapien.
-                    </p>
-                  </div>
-                </div>
-              </div>
             </div>
-          </div>
         </div>
-      </div>
     </section>
 
-    <section class="contact-section" id="contact-section">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7543.104394394796!2d73.01942760712097!3d19.03944424643569!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c3db5e2c85cd%3A0xef26c52d7d73816e!2sSIES%20Graduate%20School%20of%20Technology!5e0!3m2!1sen!2sin!4v1597752442292!5m2!1sen!2sin"
-        frameborder="0"
-        allowfullscreen=""
-        aria-hidden="false"
-        tabindex="0"
-      ></iframe>
+    <section class="contact-section" id="contact">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7543.104394394796!2d73.01942760712097!3d19.03944424643569!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c3db5e2c85cd%3A0xef26c52d7d73816e!2sSIES%20Graduate%20School%20of%20Technology!5e0!3m2!1sen!2sin!4v1597752442292!5m2!1sen!2sin"
+            frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 
-      <div class="container pt-30">
-        <div class="contact-info-text">
-          <h3>Keep in touch with us</h3>
+        <div class="container pt-30">
+            <div class="contact-info-text">
+                <h3>Keep in touch with us</h3>
+            </div>
+            <div class="contact-info-icons d-flex justify-content-center">
+                <div class="contact-info-icon" style="background-color: #ea4335">
+                    <a href="https://bit.ly/GDSCSIESGSTYouTube" target="_blank"><i class="bx bxl-youtube"></i></a>
+                </div>
+                <div class="contact-info-icon" style="background-color: #000000">
+                    <a href="https://bit.ly/3IX5PJ6" target="_blank"><i class="bx bxl-github"></i></a>
+                </div>
+                <div class="contact-info-icon" style="background-color: #4285f4">
+                    <a href="https://bit.ly/GDSCSIESGSTTwitter" target="_blank"><i class="bx bxl-twitter"></i></a>
+                </div>
+                <div class="contact-info-icon" style="background-color: #0f9d57">
+                    <a href="https://bit.ly/GDSCSIESGSTWhatsApp" target="_blank"><i class="bx bxl-whatsapp"></i></a>
+                </div>
+                <div class="contact-info-icon" style="background-color: #ff2156">
+                    <a href="https://bit.ly/GDSCSIESGSTInstagram" target="_blank"><i class="bx bxl-instagram"></i></a>
+                </div>
+                <div class="contact-info-icon" style="background-color: #7019f1">
+                    <a href="https://bit.ly/GDSCSIESGSTDiscord" target="_blank"><i class="bx bxl-discord-alt"></i></a>
+                </div>
+                <div class="contact-info-icon" style="background-color: #1626b4">
+                    <a href="https://bit.ly/GDSCSIESGSTLinkedIn" target="_blank"><i class="bx bxl-linkedin"></i></a>
+                </div>
+                <div class="contact-info-icon" style="background-color: #8e8c8e">
+                    <a href="mailto:dsc@siesgst.ac.in" target="_blank"><i class="bx bx-mail-send"></i></a>
+                </div>
+            </div>
         </div>
-        <div class="contact-info-icons d-flex justify-content-center">
-          <div class="contact-info-icon" style="background-color: #ea4335">
-            <a href=""><i class="bx bxl-youtube"></i></a>
-          </div>
-          <div class="contact-info-icon" style="background-color: #000000">
-            <a href=""><i class="bx bxl-github"></i></a>
-          </div>
-          <div class="contact-info-icon" style="background-color: #4285f4">
-            <a href=""><i class="bx bxl-twitter"></i></a>
-          </div>
-          <div class="contact-info-icon" style="background-color: #0f9d57">
-            <a href=""><i class="bx bxl-whatsapp"></i></a>
-          </div>
-          <div class="contact-info-icon" style="background-color: #ff2156">
-            <a href=""><i class="bx bxl-instagram"></i></a>
-          </div>
-          <div class="contact-info-icon" style="background-color: #7019f1">
-            <a href=""><i class="bx bxl-discord-alt"></i></a>
-          </div>
-          <div class="contact-info-icon" style="background-color: #1626b4">
-            <a href=""><i class="bx bxl-linkedin"></i></a>
-          </div>
-          <div class="contact-info-icon" style="background-color: #8e8c8e">
-            <a href=""><i class="bx bx-mail-send"></i></a>
-          </div>
-        </div>
-      </div>
     </section>
 
     <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-12 col-md-6 my-1 text-center">
-            <a href="#nav">
-              <img src="assets/images/dsc_linear.png" alt="dsc_linear" width="220"/>
-            </a>
-          </div>
-          <div class="col-12 col-md-6 my-2">
-            <h4>
-              Copyrights 2021 <strong>GDSC SIESGST</strong> | Developed with ❤ by Web Dev Team
-              DSC SIESGST
-            </h4>
-          </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 my-1 text-center">
+                    <a href="#nav">
+                        <img src="assets/images/dsc_linear.png" class="images" alt="dsc_linear" width="220" />
+                    </a>
+                </div>
+                <div class="col-12 col-md-6 my-2">
+                    <h4>
+                        Copyrights 2021 <strong>GDSC SIESGST</strong> | Developed with ❤ by Web Dev Team
+                        DSC SIESGST
+                    </h4>
+                </div>
+            </div>
         </div>
-      </div>
     </footer>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
+        </script>
+    <script src="script.js"></script>
+
+</body>
+
 </html>
