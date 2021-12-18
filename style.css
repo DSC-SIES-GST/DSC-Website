@@ -807,5 +807,7 @@ h3 {
     width: 30px;
     height: 30px;
   }
+  .about-video{
+    height: 120%;
+  }
 }
-
