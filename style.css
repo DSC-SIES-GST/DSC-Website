@@ -38,6 +38,15 @@
   nav {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   }
+
+  .navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;  
+    z-index: 1;
+  }
   
   li {
     margin-bottom: 10px;
@@ -684,12 +693,6 @@
     color: gray;
   }
   
-  @media screen and (max-width: 576px) {
-    .store-product, .Heads, .Web, .App, .ML, .Design, .Social, .Admin{
-        max-width: 10rem;
-        display: flex;
-    }
-  }
   
   /* FOOTER-SECTION */
   footer {
