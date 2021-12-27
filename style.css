@@ -26,6 +26,7 @@
     font-family: "Google-Sans-regular", sans-serif;
     color: black;
     overflow-x: hidden;
+    scroll-padding-top: 70px;
   }
   
   html,
@@ -159,6 +160,10 @@
   
   .nav5:hover::after {
     width: 100%;
+  }
+
+  .navbar-collapse{
+    background: rgb(248, 249, 250);
   }
   
   /*-------Header styling starts--------*/
