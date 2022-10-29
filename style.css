@@ -12,7 +12,10 @@
     font-family: "Google-Sans-bold";
     src: url("assets/fonts/ProductSans-Bold.ttf");
   }
-  
+  /* .dark-mode {
+    background-color: black;
+    color: white;
+  } */
   html {
     scroll-behavior: smooth;
     overflow-x: hidden;
@@ -183,6 +186,15 @@
     color: #fff;
   }
   
+  .btn-sm{
+    margin-left: 4.68rem;
+    margin-bottom: 5px;    
+    padding: 0.25rem 0.5rem !important;
+    font-size: .7rem !important;
+    line-height: 1 !important;
+    border-radius: 2.2rem !important;
+  }
+
   .btn {
     background-color: #4285f4;
     color: whitesmoke;
@@ -323,16 +335,24 @@
     transform: translateX(-48%);
   }
   
-  /*        Domains that we rain        */
+  /*        Domains that we rain       */
   
   .Web,
   .App,
   .ML,
   .Design,
   .Social,
-  .Admin {
+  .Admin,
+  .Cybersecurity,
+  .Content,
+  .Programming,
+  .Ar,
+  .Current,
+  .Past {
     display: none;
   }
+
+
   .slide-container {
     max-width: 100vw;
     display: flex;
@@ -623,6 +643,18 @@
     border-radius: 20px;
     color: white;
   }
+  .social-logo{
+    height: 128px;
+  }
+
+  #preloader{
+    background: #fff url(./assets/images/gdsc.gif) no-repeat center center;
+    background-size: 30%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100000;
+  }
   @media (min-width: 768px) {
     .timeline-steps .timeline-step:not(:last-child):after {
       content: "";
@@ -777,6 +809,7 @@
     transition: transform 500ms ease;
   }
 
+  
   .domain-card{
     width: 150px !important;
     height: 210px !important;
@@ -784,8 +817,9 @@
 
   .event-card{
     width: 150px !important;
-    height: 250px !important;
+    height: 280px !important;
   }
+ 
   .carousel-wrapper .carousel .carousel-cell .more {
     display: block;
     opacity: 0;
@@ -822,7 +856,7 @@
   }
   .carousel-cell {
     border: 1px rgb(161, 161, 161) solid;
-    border-radius: 10px;
+    border-radius: 20px;
   }
 
   @media screen and (max-width: 700px) {
@@ -837,6 +871,9 @@
     .rightheader {
       display: none;
     }
+    .youtube{
+      margin-top: 5rem;
+    }
     .about {
       margin-top: -10rem;
     }
@@ -850,4 +887,82 @@
     .about-video{
       height: 120%;
     }
+  }
+
+  .card{
+    border-radius: 20px;
+  }
+  .card:hover{
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+    transform: scale(1.02);
+    transition: all 0.5s ease;
+  }
+  .domain-card:hover{ 
+    cursor: pointer;
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+    transition: all 1.0s ease;
+  }
+  .event-card:hover{
+    cursor: pointer;
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+    transition: all 1.0s ease;
+  }
+  .backg-box{
+    margin-top: 20px;
+    height: 38%;
+    width: 40%;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    background-size: cover;
+    position: relative;
+    transform: translate(8%,11%);
+    overflow: hidden;
+  }
+  .backg-img{
+    width: 100%;
+    background: solid;
+      display: flex;
+      animation: slide 16s infinite;
+  }
+  .backg-img img{
+    width: 100%;
+  }
+  @keyframes slide{
+    0%{
+        transform: translateX(-0);
+    }
+    25%{
+        transform: translateX(-0);
+    }
+    30%{
+        transform: translateX(-100%);
+    }
+    50%{
+        transform: translateX(-100%);
+    }
+    55%{
+        transform: translateX(-200%);
+    }
+    75%{
+        transform: translateX(-200%);
+    }
+    80%{
+        transform: translateX(-300%);
+    }
+    100%{
+        transform: translateX(-300%);
+    }
+  }
+
+  .popover-header {
+    padding: 0.5rem 1rem;
+    margin-bottom: 0;
+    font-size: 1rem;
+    border-bottom: 1px solid rgba(0,0,0,.2);
+    font-family: var(--bs-font-sans-serif);  
+    padding: 0.5rem 0.75rem;
+    color: #212529;
+    background: #fff;
   }

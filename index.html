@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -33,7 +33,12 @@
     <title>Google Developer Student Clubs | SIES GST</title>
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#maiNav" id="home" onload="myFunction()">
+
+    <!-- Preloader -->
+
+    <div id="preloader">
+    </div>
 
 
     <!--------navbar-------->
@@ -92,16 +97,19 @@
                         <li class="nav-item">
                             <a class="nav-link active nav5" href="#contact" style="margin-right: 20px">Contact Us</a>
                         </li>
+                            <li class="nav-item">
+                                
+                            </li>
                     </ul>
                 </div>
         </div>
     </nav>
 
     <!---------------------starting of header--------------------->
-    <div class="container" id="home">
+    <div class="container pb-5  mb-5" id="home">
         <div class="row header pt-4">
-            <div class="col-lg-6 text-center leftheader mb-3" style="height: 300px">
-                <img src="./assets/images/dsc_logo.jpg" style="height: 40%" alt="" />
+            <div class="col-lg-6 col-sm-12 text-center leftheader mb-3" style="height: 300px">
+                <img src="./assets/images/dsc_logo.png" style="height: 80%" alt="" />
                 <h2>
                     Developer Students Club<br />
                     SIES Graduate School of Technology
@@ -110,8 +118,13 @@
                 <a href="https://bit.ly/GDSCSIESGSTCommunityPage" target="_blank" class="button">Join Us</a>
 
             </div>
-            <div class="col-lg-6 mb-sm-5 rightheader">
-                <img src="./assets/images/image-removebg-preview.png" style="width: 100%" class="" alt="" />
+            <div class="backg-box mb-5 rightheader">
+                <div class="backg-img">
+                    <img src="assets/images/GDSCwow.png">
+                    <img src="assets/images/GDSCmeet.png">
+                    <img src="assets/images/3team.png">
+                    <img src="assets/images/image-removebg-preview.png">
+                </div>
             </div>
         </div>
     </div>
@@ -121,7 +134,7 @@
 
     <div class="container about mt-4">
         <div class="row">
-            <div class="col-lg-6 d-flex justify-content-md-center mb-4">
+            <div class="col-lg-6 d-flex justify-content-md-center mb-4 youtube">
                 <iframe class="about-video mx-auto" src="https://www.youtube.com/embed/Jqf52nThBt0?controls=0"></iframe>
             </div>
             <div class="col-lg-6 text-lg-start text-center mt-5 mt-lg-0">
@@ -193,15 +206,31 @@
             </div>
             <div class="carousel-cell domain-card">
                 <img class="card-img mb-4" src="./assets/images/undraw_cloud_sync_re_02p1.png" />
-                <h3>Cloud Computing</h3>
+                <h3>CyberSecurity, Blockchain</h3>
             </div>
             <div class="carousel-cell domain-card">
                 <img class="card-img mb-4" src="./assets/images/undraw_art_lover_re_fn8g.png" />
-                <h3> Design</h3>
+                <h3>UI / UX</h3>
             </div>
             <div class="carousel-cell domain-card">
                 <img class="card-img mb-4" src="./assets/images/undraw_pair_programming_re_or4x.png" />
-                <h3> Competitive Programming</h3>
+                <h3>Programming</h3>
+            </div>
+            <div class="carousel-cell domain-card">
+                <img class="card-img mb-4" src="./assets/images/social_media.png" />
+                <h3>Social Media</h3>
+            </div>
+            <div class="carousel-cell domain-card">
+                <img class="card-img mb-4 social-logo" src="./assets/images/technical_content.png" />
+                <h3>Technical Writing</h3>
+            </div>
+            <div class="carousel-cell domain-card">
+                <img class="card-img mb-4" src="./assets/images/management.png" />
+                <h3>Management</h3>
+            </div>
+            <div class="carousel-cell domain-card">
+                <img class="card-img mb-4" src="./assets/images/ar.png" />
+                <h3>AR/ VR</h3>
             </div>
         </div>
     </div>
@@ -293,9 +322,28 @@
     </div>
     <div class="carousel-wrapper mb-4">
         <div class="carousel" data-flickity>
+            
+            <div class="carousel-cell event-image event-card" data-container="body" data-toggle="popover" data-placement="bottom" title="Hacktoberfest is for everyone. Whether it’s your first time—or your ninth—it’s almost time to hack out four pristine pull/merge requests and complete your mission for open source. Join other members of the open-source community on the hacktoberfest discord." type="button" >
+                <button class="text-right btn-danger btn-sm"><i class='bx bxs-circle' ></i> Live</button>
+                <img class="card-img event-img" src="assets/images/HACKTOBER.svg" />
+                <h3 class="mt-3 event-heading mb-3">Hacktober Fest</h3>
+                <div class="text-center"><a type="button" class="button event-btn p-1 px-3 mt-3"
+                        href="https://gdsc.community.dev/events/details/developer-student-clubs-sies-graduate-school-of-technology-navi-mumbai-presents-hacktoberfest21-siesgst/"
+                        target="_blank">Learn More</a>
+                </div>
+            </div>
+            
+            <div class="carousel-cell event-image event-card">
+                
+                <img class="card-img event-img" src="assets/images/android_compose.webp" />
+                <h3 class="mt-3 event-heading">Android Compose Camp</h3>
+                <div class="text-center"><a type="button" class="button event-btn p-1 px-3 mt-3"
+                        href="https://gdsc.community.dev/events/details/developer-student-clubs-sies-graduate-school-of-technology-navi-mumbai-presents-compose-camp-session-1-android-basics-and-app-ui/"
+                        target="_blank">Learn More</a>
+                </div>
+            </div>
 
             <div class="carousel-cell event-image event-card">
-
                 <img class="card-img event-img" src="assets/images/android2.jpeg" />
                 <h3 class="mt-3 event-heading">Android Study Jams</h3>
                 <div class="text-center"><a type="button" class="button event-btn p-1 px-3 mt-3"
@@ -313,14 +361,6 @@
                 </div>
             </div>
 
-            <div class="carousel-cell event-image event-card">
-                <img class="card-img event-img" src="assets/images/HACKTOBER.svg" />
-                <h3 class="mt-3 event-heading mb-3">Hacktober Fest</h3>
-                <div class="text-center"><a type="button" class="button event-btn p-1 px-3 mt-3"
-                        href="https://gdsc.community.dev/events/details/developer-student-clubs-sies-graduate-school-of-technology-navi-mumbai-presents-hacktoberfest21-siesgst/"
-                        target="_blank">Learn More</a>
-                </div>
-            </div>
 
             <div class="carousel-cell event-image event-card">
                 <img class="card-img event-img" src="assets/images/traas (1).png" />
@@ -352,6 +392,7 @@
 
 
     <!--------------our team--------------------->
+    <!-- Make changes in Css file  -->
     <section id="store-products">
         <div class="container pb-5 mt-5">
             <h2 class="title">
@@ -360,30 +401,42 @@
         </div>
         <center>
             <div class="row team mx-auto justify-content-center mb-5">
-                <div class="col-lg-1 col-md-3 col-sm-6 bt  btn " data-filter="Web">
+                <div class="col-lg-1 col-md-3 col-sm-6 bt btn" data-filter="Web">
                     Web
                 </div>
-                <div class="col-lg-1 col-md-3 col-sm-6 bt  btn " data-filter="App">
+                <div class="col-lg-1 col-md-3 col-sm-6 bt btn" data-filter="App">
                     Android
                 </div>
-                <div class="col-lg-1 col-md-3 col-sm-6 bt  btn " data-filter="Design">
-                    Design
-                </div>
-                <div class="col-lg-1 col-md-3 col-sm-6 bt  btn " data-filter="ML">
+                <div class="col-lg-1 col-md-3 col-sm-6 bt btn" data-filter="ML">
                     ML & AI
                 </div>
-                <div class="col-lg-1 col-md-3 col-sm-6 bt  btn " data-filter="Social">
+                <div class="col-lg-1 col-md-3 col-sm-6 bt  btn" data-filter="Admin">
+                    Management
+                </div>
+                <div class="col-lg-1 col-md-3 col-sm-6 bt  btn" data-filter="Cybersecurity">
+                    Cybersecurity
+                </div>
+
+                <div class="col-lg-1 col-md-3 col-sm-6 bt btn" data-filter="Design">
+                    UI/UX
+                </div>
+                <div class="col-lg-1 col-md-3 col-sm-6 bt  btn" data-filter="Programming">
+                    Programming
+                </div>
+                <div class="col-lg-1 col-md-3 col-sm-6 bt btn" data-filter="Social">
                     Social Media
                 </div>
-                <div class="col-lg-1 col-md-3 col-sm-6 bt  btn" data-filter="Admin">
-                    Administration
+                <div class="col-lg-1 col-md-3 col-sm-6 bt  btn" data-filter="Content">
+                    Technical Writing
+                </div>
+                <div class="col-lg-1 col-md-3 col-sm-6 bt  btn" data-filter="Ar">
+                    AR/VR
                 </div>
                 <div class="col-lg-1 col-md-3 col-sm-6 bt  btn " data-filter="Heads">
                     Heads
                 </div>
             </div>
         </center>
-        </div>
 
 
         <!---------------------leads card structure--------------------->
@@ -393,24 +446,36 @@
                     <div class="col-lg-3 col-md-4 col-sm-6 mt-4 store-product Heads justify-content-center">
                         <div class="card " style="width: 12rem">
                             <div class="img1 text-center">
-                                <img src="./assets/leads/belwadi_anirudh.jpg" class="card-img-top w-75 mt-2"
+                                <img src="assets/leads/Mehul_Aswar.jpeg" class="card-img-top w-75 mt-2"
                                     style="border-radius: 50%; padding: 2%" alt="..." />
                             </div>
                             <div class="card-body product-details">
-                                <h6>Anirudh Belwadi</h6>
+                                <h6>Mehul Aswar</h6>
                                 <p class="card-text position">GDSC Lead</p>
                             </div>
                         </div>
+                    </div>      
+                    <div class="col-lg-3 col-md-4 col-sm-6 mt-4 store-product Heads justify-content-center">
+                        <div class="card " style="width: 12rem">
+                            <div class="img1 text-center">
+                                <img src="assets/leads/anamika.jpg" class="card-img-top w-75 mt-2"
+                                    style="border-radius: 50%; padding: 2%" alt="..." />
+                            </div>
+                            <div class="card-body product-details">
+                                <h6>Anamika</h6>
+                                <p class="card-text position">Secretary & Outreach Lead</p>
+                            </div>
+                        </div>      
                     </div>
 
                     <div class="col-lg-3 col-md-4 col-sm-6 mt-4 store-product Heads justify-content-center">
                         <div class="card " style="width: 12rem">
                             <div class="img1 text-center">
-                                <img src="./assets/leads/pallavi_lodhi.jpg" class="card-img-top w-75 mt-2"
+                                <img src="assets/leads/rohit_raghuram.jpeg" class="card-img-top w-75 mt-2"
                                     style="border-radius: 50%; padding: 2%" alt="..." />
                             </div>
                             <div class="card-body product-details">
-                                <h6>Pallavi Lodhi</h6>
+                                <h6>Rohit Raghuram</h6>
                                 <p class="card-text position">Web & App Dev Lead</p>
                             </div>
                         </div>
@@ -419,12 +484,12 @@
                     <div class="col-lg-3 col-md-4 col-sm-6 mt-4 store-product Heads justify-content-center">
                         <div class="card " style="width: 12rem">
                             <div class="img1 text-center">
-                                <img src="./assets/leads/ninad_deshpande.jpg" class="card-img-top w-75 mt-2"
+                                <img src="assets/leads/Vaishnavi_Dixit.jpeg" class="card-img-top w-75 mt-2"
                                     style="border-radius: 50%; padding: 2%" alt="..." />
                             </div>
                             <div class="card-body product-details">
-                                <h6>Ninad Deshpande</h6>
-                                <p class="card-text position">Design Lead</p>
+                                <h6>Vaishnavi Dixit</h6>
+                                <p class="card-text position">ML & DS Lead</p>
                             </div>
                         </div>
                     </div>
@@ -432,12 +497,12 @@
                     <div class="col-lg-3 col-md-4 col-sm-6 mt-4 store-product Heads justify-content-center">
                         <div class="card " style="width: 12rem">
                             <div class="img1 text-center">
-                                <img src="./assets/leads/anushree_kolhe_bBm9F5v.jpg" class="card-img-top w-75 mt-2"
+                                <img src="assets/leads/mansi_kore.jpg" class="card-img-top w-75 mt-2"
                                     style="border-radius: 50%; padding: 2%" alt="..." />
                             </div>
                             <div class="card-body product-details">
-                                <h6>Anushree Kolhe</h6>
-                                <p class="card-text position">ML & AI Lead</p>
+                                <h6>Mansi Kore</h6>
+                                <p class="card-text position">Management     Lead</p>
                             </div>
                         </div>
                     </div>
@@ -445,13 +510,26 @@
                     <div class="col-lg-3 col-md-4 col-sm-6 mt-4 store-product Heads justify-content-center">
                         <div class="card " style="width: 12rem">
                             <div class="img1 text-center">
-                                <img src="./assets/leads/vishal_naregal.jpg" class="card-img-top w-75 mt-2"
+                                <img src="assets/leads/vedant_Bhamare.jpg" class="card-img-top w-75 mt-2"
                                     style="border-radius: 50%; padding: 2%" alt="..." />
                             </div>
                             <div class="card-body product-details">
-                                <h6>Vishal Naregal</h6>
+                                <h6>Vedant Bhamare</h6>
+                                <p class="card-text position">Cybersecurity,Blockchain Lead</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6 mt-4 store-product Heads justify-content-center">
+                        <div class="card " style="width: 12rem">
+                            <div class="img1 text-center">
+                                <img src="assets/leads/Pournami_Pottekat.jpeg" class="card-img-top w-75 mt-2"
+                                    style="border-radius: 50%; padding: 2%" alt="..." />
+                            </div>
+                            <div class="card-body product-details">
+                                <h6>Pournami Pottekat</h6>
                                 <p class="card-text position">
-                                    Social Media & Publicity Lead
+                                    UI/UX Lead
                                 </p>
                             </div>
                         </div>
@@ -460,19 +538,60 @@
                     <div class="col-lg-3 col-md-4 col-sm-6 mt-4 store-product Heads justify-content-center">
                         <div class="card " style="width: 12rem">
                             <div class="img1 text-center">
-                                <img src="./assets/leads/kriti_kakkar_xSPKqB0.jpg" class="card-img-top w-75 mt-2"
+                                <img src="assets/leads/Varun_Ganesh.webp" class="card-img-top w-75 mt-2"
                                     style="border-radius: 50%; padding: 2%" alt="..." />
                             </div>
                             <div class="card-body product-details">
-                                <h6>Kriti Kakkar</h6>
+                                <h6>Mansi Kore</h6>
                                 <p class="card-text position">
-                                    Administration and Management Lead
+                                    Programming Lead
                                 </p>
                             </div>
                         </div>
                     </div>
-
-                </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 mt-4 store-product Heads justify-content-center">
+                        <div class="card " style="width: 12rem">
+                            <div class="img1 text-center">
+                                <img src="assets/leads/Aditi_Singh.jpg" class="card-img-top w-75 mt-2"
+                                    style="border-radius: 50%; padding: 2%" alt="..." />
+                            </div>
+                            <div class="card-body product-details">
+                                <h6>Aditi Singh</h6>
+                                <p class="card-text position">
+                                    Social Media Lead
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 mt-4 store-product Heads justify-content-center">
+                        <div class="card " style="width: 12rem">
+                            <div class="img1 text-center">
+                                <img src="assets/leads/kritika_pandey.jpeg" class="card-img-top w-75 mt-2"
+                                    style="border-radius: 50%; padding: 2%" alt="..." />
+                            </div>
+                            <div class="card-body product-details">
+                                <h6>Kritika Pandey</h6>
+                                <p class="card-text position">
+                                    Technical Writing Lead
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 mt-4 store-product Heads justify-content-center">
+                        <div class="card " style="width: 12rem">
+                            <div class="img1 text-center">
+                                <img src="assets/leads/kalsishubhjeet.jpg" class="card-img-top w-75 mt-2"
+                                    style="border-radius: 50%; padding: 2%" alt="..." />
+                            </div>
+                            <div class="card-body product-details">
+                                <h6>Shubhjeet Singh Kalsi</h6>
+                                <p class="card-text position">
+                                    AR/VR Lead
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>                
             </center>
         </div>
 
@@ -484,11 +603,11 @@
                     <div class="col-lg-3 col-md-4 col-sm-6 mt-4 store-product Web justify-content-center">
                         <div class="card " style="width: 12rem">
                             <div class="img1 text-center">
-                                <img src="./assets/leads/pallavi_lodhi.jpg" class="card-img-top w-75 mt-2"
+                                <img src="assets/leads/rohit_raghuram.jpeg" class="card-img-top w-75 mt-2"
                                     style="border-radius: 50%; padding: 2%" alt="..." />
                             </div>
                             <div class="card-body product-details">
-                                <h6>Pallavi Lodhi</h6>
+                                <h6>Rohit Raghuram</h6>
                                 <p class="card-text position">Web & App Dev Lead</p>
                             </div>
                         </div>
@@ -496,20 +615,7 @@
                     <div class="col-lg-3 col-md-4 col-sm-6 mt-4 store-product Web justify-content-center">
                         <div class="card " style="width: 12rem">
                             <div class="img1 text-center">
-                                <img src="./assets/web/emaad_sayed.png" class="card-img-top w-75 mt-2"
-                                    style="border-radius: 50%; padding: 2%" alt="..." />
-                            </div>
-                            <div class="card-body product-details">
-                                <h6>Emaad Sayed</h6>
-                                <p class="card-text position">Web Development Coordinator</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-4 col-sm-6 mt-4 store-product Web justify-content-center">
-                        <div class="card " style="width: 12rem">
-                            <div class="img1 text-center">
-                                <img src="./assets/web/suchit_deshmukh.jfif" class="card-img-top w-75 mt-2"
+                                <img src="assets/web/suchit_deshmukh.png" class="card-img-top w-75 mt-2"
                                     style="border-radius: 50%; padding: 2%" alt="..." />
                             </div>
                             <div class="card-body product-details">
@@ -522,11 +628,11 @@
                     <div class="col-lg-3 col-md-4 col-sm-6 mt-4 store-product Web justify-content-center">
                         <div class="card " style="width: 12rem">
                             <div class="img1 text-center">
-                                <img src="./assets/web/sarika_hire_4l8eKDM.jpg" class="card-img-top w-75 mt-2"
+                                <img src="assets/web/arnav_pawar.jpg" class="card-img-top w-75 mt-2"
                                     style="border-radius: 50%; padding: 2%" alt="..." />
                             </div>
                             <div class="card-body product-details">
-                                <h6>Sarika Hire</h6>
+                                <h6>Arnav Pawar</h6>
                                 <p class="card-text position">Web Development Coordinator</p>
                             </div>
                         </div>
@@ -535,11 +641,11 @@
                     <div class="col-lg-3 col-md-4 col-sm-6 mt-4 store-product Web justify-content-center">
                         <div class="card " style="width: 12rem">
                             <div class="img1 text-center">
-                                <img src="./assets/web/kartik_sharma_JyYzxjI.jpg" class="card-img-top w-75 mt-2"
+                                <img src="assets/web/Shivam_Gupta.png" class="card-img-top w-75 mt-2"
                                     style="border-radius: 50%; padding: 2%" alt="..." />
                             </div>
                             <div class="card-body product-details">
-                                <h6>Kartik Sharma</h6>
+                                <h6>Shivam Gupta</h6>
                                 <p class="card-text position">Web Development Coordinator</p>
                             </div>
                         </div>
@@ -548,11 +654,11 @@
                     <div class="col-lg-3 col-md-4 col-sm-6 mt-4 store-product Web justify-content-center">
                         <div class="card " style="width: 12rem">
                             <div class="img1 text-center">
-                                <img src="./assets/web/yash_bhoite_2qONgI3.jpg" class="card-img-top w-75 mt-2"
+                                <img src="assets/web/saniya_nande.jpeg" class="card-img-top w-75 mt-2"
                                     style="border-radius: 50%; padding: 2%" alt="..." />
                             </div>
                             <div class="card-body product-details">
-                                <h6>Yash Bhoite</h6>
+                                <h6>Saniya Nande</h6>
                                 <p class="card-text position">Web Development Coordinator</p>
                             </div>
                         </div>
@@ -561,16 +667,17 @@
                     <div class="col-lg-3 col-md-4 col-sm-6 mt-4 store-product Web justify-content-center">
                         <div class="card " style="width: 12rem">
                             <div class="img1 text-center">
-                                <img src="./assets/web/sahil_raut.jpg" class="card-img-top w-75 mt-2"
+                                <img src="assets/web/Deepak_Chaudhary.jpg" class="card-img-top w-75 mt-2"
                                     style="border-radius: 50%; padding: 2%" alt="..." />
                             </div>
                             <div class="card-body product-details">
-                                <h6>Sahil Raut</h6>
+                                <h6>Deepak Chaudhary</h6>
                                 <p class="card-text position">Web Development Coordinator</p>
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>    
+
             </center>
         </div>
 
@@ -582,11 +689,11 @@
                     <div class="col-lg-3 col-md-4 col-sm-6 mt-4 store-product App justify-content-center">
                         <div class="card " style="width: 12rem">
                             <div class="img1 text-center">
-                                <img src="./assets/leads/pallavi_lodhi.jpg" class="card-img-top w-75 mt-2"
+                                <img src="assets/leads/rohit_raghuram.jpeg" class="card-img-top w-75 mt-2"
                                     style="border-radius: 50%; padding: 2%" alt="..." />
                             </div>
                             <div class="card-body product-details">
-                                <h6>Pallavi Lodhi</h6>
+                                <h6>Rohit Raghuram</h6>
                                 <p class="card-text position">Web & App Dev Lead</p>
                             </div>
                         </div>
@@ -594,11 +701,11 @@
                     <div class="col-lg-3 col-md-4 col-sm-6  mt-4 store-product App justify-content-center">
                         <div class="card " style="width: 12rem">
                             <div class="img1 text-center">
-                                <img src="./assets/app/vedant_bhamare_83pGrZ0.jpeg" class="card-img-top w-75 mt-2"
+                                <img src="assets/admin/Madhavan_Venkatesh.jpeg" class="card-img-top w-75 mt-2"
                                     style="border-radius: 50%; padding: 2%" alt="..." />
                             </div>
                             <div class="card-body product-details">
-                                <h6>Vedant Bhamare</h6>
+                                <h6>Madhavan Venkatesh</h6>
                                 <p class="card-text position">App Development Coordinator</p>
                             </div>
                         </div>
@@ -607,11 +714,11 @@
                     <div class="col-lg-3 col-md-4 col-sm-6  mt-4 store-product App justify-content-center">
                         <div class="card " style="width: 12rem">
                             <div class="img1 text-center">
-                                <img src="./assets/app/manghinipun_siesgst_DQAy7cd.jpg" class="card-img-top w-75 mt-2"
+                                <img src="assets/admin/sudanshu_kadam.jpg" class="card-img-top w-75 mt-2"
                                     style="border-radius: 50%; padding: 2%" alt="..." />
                             </div>
                             <div class="card-body product-details">
-                                <h6>Nipun Manghi</h6>
+                                <h6>Sudhanshu Kadam</h6>
                                 <p class="card-text position">App Development Coordinator</p>
                             </div>
                         </div>
@@ -620,11 +727,11 @@
                     <div class="col-lg-3 col-md-4 col-sm-6  mt-4 store-product App justify-content-center">
                         <div class="card " style="width: 12rem">
                             <div class="img1 text-center">
-                                <img src="./assets/app/rohitraghuram_siesgst.jpeg" class="card-img-top w-75 mt-2"
+                                <img src="assets/admin/Kaustubh_Sonawane.jpg" class="card-img-top w-75 mt-2"
                                     style="border-radius: 50%; padding: 2%" alt="..." />
                             </div>
                             <div class="card-body product-details">
-                                <h6>Rohit Raghuram</h6>
+                                <h6>Kaustubh Sonawane</h6>
                                 <p class="card-text position">App Development Coordinator</p>
                             </div>
                         </div>
@@ -633,7 +740,7 @@
             </center>
         </div>
 
-        <!---------------------Design Team card structure--------------------->
+        <!---------------------UI / UX & Design Team card structure--------------------->
 
         <div class="container">
             <center>
@@ -641,23 +748,62 @@
                     <div class="col-lg-3 col-md-4 col-sm-6 mt-4 store-product Design justify-content-center">
                         <div class="card " style="width: 12rem">
                             <div class="img1 text-center">
-                                <img src="./assets/leads/ninad_deshpande.jpg" class="card-img-top w-75 mt-2"
+                                <img src="./assets/leads/Pournami_Pottekat.jpeg" class="card-img-top w-75 mt-2"
                                     style="border-radius: 50%; padding: 2%" alt="..." />
                             </div>
                             <div class="card-body product-details">
-                                <h6>Ninad Deshpande</h6>
-                                <p class="card-text position">Design Lead</p>
+                                <h6>Pournami Pottekat</h6>
+                                <p class="card-text position">UI / UX & Design Lead</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-6 mt-4 store-product Design justify-content-center">
                         <div class="card " style="width: 12rem">
                             <div class="img1 text-center">
-                                <img src="./assets/design/sucharya_deshmukh_UMGMWtS.jpeg" class="card-img-top w-75 mt-2"
+                                <img src="./assets/ui_ux/aditya_rao.jpeg" class="card-img-top w-75 mt-2"
                                     style="border-radius: 50%; padding: 2%" alt="..." />
                             </div>
                             <div class="card-body product-details">
-                                <h6>Sucharya Deshmukh</h6>
+                                <h6>Aditya Rao</h6>
+                                <p class="card-text position">UI / UX Coordinator</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6 mt-4 store-product Design justify-content-center">
+                        <div class="card " style="width: 12rem">
+                            <div class="img1 text-center">
+                                <img src="./assets/ui_ux/mukta_chavanwebp.jpg" class="card-img-top w-75 mt-2"
+                                    style="border-radius: 50%; padding: 2%" alt="..." />
+                            </div>
+                            <div class="card-body product-details">
+                                <h6>Mukta Chavan</h6>
+                                <p class="card-text position">UI / UX Coordinator</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6 mt-4 store-product Design justify-content-center">
+                        <div class="card " style="width: 12rem">
+                            <div class="img1 text-center">
+                                <img src="assets/design/ASHISH_BABAN_BHOIR.png" class="card-img-top w-75 mt-2"
+                                    style="border-radius: 50%; padding: 2%" alt="..." />
+                            </div>
+                            <div class="card-body product-details">
+                                <h6>Ashish Bhoir</h6>
+                                <p class="card-text position">Design Coordinator</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6 mt-4 store-product Design justify-content-center">
+                        <div class="card " style="width: 12rem">
+                            <div class="img1 text-center">
+                                <img src="assets/design/Swarangi_Bhosale.jpeg" class="card-img-top w-75 mt-2"
+                                    style="border-radius: 50%; padding: 2%" alt="..." />
+                            </div>
+                            <div class="card-body product-details">
+                                <h6>Swarangi Bhosale</h6>
                                 <p class="card-text position">Design Coordinator</p>
                             </div>
                         </div>
@@ -666,7 +812,7 @@
             </center>
         </div>
 
-        <!---------------------ML & AI team card structure--------------------->
+        <!---------------------ML & DS team card structure--------------------->
 
         <div class="container">
             <center>
@@ -674,38 +820,12 @@
                     <div class="col-lg-3 col-md-4 col-sm-6 mt-4 store-product ML justify-content-center">
                         <div class="card " style="width: 12rem">
                             <div class="img1 text-center">
-                                <img src="./assets/leads/anushree_kolhe_bBm9F5v.jpg" class="card-img-top w-75 mt-2"
-                                    style="border-radius: 50%; padding: 2%" alt="..." />
-                            </div>
-                            <div class="card-body product-details">
-                                <h6>Anushree Kolhe</h6>
-                                <p class="card-text position">ML & AI Lead</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-4 col-sm-6 mt-4 store-product ML justify-content-center">
-                        <div class="card " style="width: 12rem">
-                            <div class="img1 text-center">
-                                <img src="./assets/ml&ai/Mehul Aswar.jpeg" class="card-img-top w-75 mt-2"
-                                    style="border-radius: 50%; padding: 2%" alt="..." />
-                            </div>
-                            <div class="card-body product-details">
-                                <h6>Mehul Aswar</h6>
-                                <p class="card-text position">ML & AI Coordinator</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-4 col-sm-6 mt-4 store-product ML justify-content-center">
-                        <div class="card " style="width: 12rem">
-                            <div class="img1 text-center">
-                                <img src="./assets/ml&ai/vaishnavi_dixit.jpeg" class="card-img-top w-75 mt-2"
+                                <img src="assets/leads/Vaishnavi_Dixit.jpeg" class="card-img-top w-75 mt-2"
                                     style="border-radius: 50%; padding: 2%" alt="..." />
                             </div>
                             <div class="card-body product-details">
                                 <h6>Vaishnavi Dixit</h6>
-                                <p class="card-text position">ML & AI Coordinator</p>
+                                <p class="card-text position">ML & DS Lead</p>
                             </div>
                         </div>
                     </div>
@@ -713,25 +833,12 @@
                     <div class="col-lg-3 col-md-4 col-sm-6 mt-4 store-product ML justify-content-center">
                         <div class="card " style="width: 12rem">
                             <div class="img1 text-center">
-                                <img src="./assets/ml&ai/shweta_madhale_o1vQqxg.jpg" class="card-img-top w-75 mt-2"
-                                    style="border-radius: 50%; padding: 2%" alt="..." />
-                            </div>
-                            <div class="card-body product-details">
-                                <h6>Shweta Madhale</h6>
-                                <p class="card-text position">ML & AI Coordinator</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-4 col-sm-6 mt-4 store-product ML justify-content-center">
-                        <div class="card " style="width: 12rem">
-                            <div class="img1 text-center">
-                                <img src="./assets/ml&ai/yash_patil_3RNnKOD.jpg" class="card-img-top w-75 mt-2"
+                                <img src="assets/ml&ai/Yash_Patil.jpg" class="card-img-top w-75 mt-2"
                                     style="border-radius: 50%; padding: 2%" alt="..." />
                             </div>
                             <div class="card-body product-details">
                                 <h6>Yash Patil</h6>
-                                <p class="card-text position">ML & AI Coordinator</p>
+                                <p class="card-text position">ML & DS Coordinator</p>
                             </div>
                         </div>
                     </div>
@@ -739,12 +846,38 @@
                     <div class="col-lg-3 col-md-4 col-sm-6 mt-4 store-product ML justify-content-center">
                         <div class="card " style="width: 12rem">
                             <div class="img1 text-center">
-                                <img src="./assets/ml&ai/sahil_ashok_wake.jpg" class="card-img-top w-75 mt-2"
+                                <img src="assets/ml&ai/Sahil_Wake.jpg" class="card-img-top w-75 mt-2"
                                     style="border-radius: 50%; padding: 2%" alt="..." />
                             </div>
                             <div class="card-body product-details">
                                 <h6>Sahil Wake</h6>
-                                <p class="card-text position">ML & AI Coordinator</p>
+                                <p class="card-text position">ML & DS Coordinator</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6 mt-4 store-product ML justify-content-center">
+                        <div class="card " style="width: 12rem">
+                            <div class="img1 text-center">
+                                <img src="assets/ml&ai/nivedh_nambiar.jpg" class="card-img-top w-75 mt-2"
+                                    style="border-radius: 50%; padding: 2%" alt="..." />
+                            </div>
+                            <div class="card-body product-details">
+                                <h6>Nivedh Nambiar</h6>
+                                <p class="card-text position">ML & DS Coordinator</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6 mt-4 store-product ML justify-content-center">
+                        <div class="card " style="width: 12rem">
+                            <div class="img1 text-center">
+                                <img src="assets/ml&ai/Latika_Dekate.jpg" class="card-img-top w-75 mt-2"
+                                    style="border-radius: 50%; padding: 2%" alt="..." />
+                            </div>
+                            <div class="card-body product-details">
+                                <h6>Latika Dekate</h6>
+                                <p class="card-text position">ML & DS Coordinator</p>
                             </div>
                         </div>
                     </div>
@@ -760,11 +893,11 @@
                     <div class="col-lg-3 col-md-4 col-sm-6 mt-4 store-product Social justify-content-center">
                         <div class="card " style="width: 12rem">
                             <div class="img1 text-center">
-                                <img src="./assets/leads/vishal_naregal.jpg" class="card-img-top w-75 mt-2"
+                                <img src="assets/leads/Aditi_Singh.jpg" class="card-img-top w-75 mt-2"
                                     style="border-radius: 50%; padding: 2%" alt="..." />
                             </div>
                             <div class="card-body product-details">
-                                <h6>Vishal Naregal</h6>
+                                <h6>Aditi Singh</h6>
                                 <p class="card-text position">
                                     Social Media & Publicity Lead
                                 </p>
@@ -774,11 +907,25 @@
                     <div class="col-lg-3 col-md-4 col-sm-6 mt-4  store-product Social justify-content-center">
                         <div class="card" style="width: 12rem">
                             <div class="img1 text-center">
-                                <img src="./assets/social media/pranathy_mudaliyar.jpeg" class="card-img-top w-75 mt-2"
+                                <img src="assets/social media/Tilakshankar_Sakthikumar-.jpg" class="card-img-top w-75 mt-2"
                                     style="border-radius: 50%; padding: 2%" alt="..." />
                             </div>
                             <div class="card-body product-details">
-                                <h6>Pranathy Mudaliyar</h6>
+                                <h6>Tilakshankar Sakthikumar</h6>
+                                <p class="card-text position">
+                                    Social Media and Publicity Coordinator
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 mt-4  store-product Social justify-content-center">
+                        <div class="card" style="width: 12rem">
+                            <div class="img1 text-center">
+                                <img src="assets/social media/Nikita_Chaudhari.jpg" class="card-img-top w-75 mt-2"
+                                    style="border-radius: 50%; padding: 2%" alt="..." />
+                            </div>
+                            <div class="card-body product-details">
+                                <h6>Nikita Chaudhari</h6>
                                 <p class="card-text position">
                                     Social Media and Publicity Coordinator
                                 </p>
@@ -789,87 +936,309 @@
             </center>
         </div>
 
-        <!---------------------Administration & Management card structure--------------------->
+        <!---------------------Management card structure--------------------->
 
         <div class="container">
             <center>
-                <div class="row Admins justify-content-center mx-auto">
-                    <div class="col-lg-3 col-md-4 col-sm-6 mt-4 store-product Admin justify-content-center">
-                        <div class="card " style="width: 12rem">
-                            <div class="img1 text-center">
-                                <img src="./assets/leads/kriti_kakkar_xSPKqB0.jpg" class="card-img-top w-75 mt-2"
-                                    style="border-radius: 50%; padding: 2%" alt="..." />
-                            </div>
-                            <div class="card-body product-details">
-                                <h6>Kriti Kakkar</h6>
-                                <p class="card-text position">
-                                    Administration and Management Lead
-                                </p>
-                            </div>
+            <div class="row Admins justify-content-center mx-auto">
+                <div class="col-lg-3 col-md-4 col-sm-6 mt-4 store-product Admin justify-content-center">
+                    <div class="card " style="width: 12rem">
+                        <div class="img1 text-center">
+                            <img src="assets/leads/mansi_kore.jpg" class="card-img-top w-75 mt-2"
+                                style="border-radius: 50%; padding: 2%" alt="..." />
+                        </div>
+                        <div class="card-body product-details">
+                            <h6>Mansi Kore</h6>
+                            <p class="card-text position">
+                                Administration and Management Lead
+                            </p>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6 mt-4 store-product Admin justify-content-center">
-                        <div class="card " style="width: 12rem">
-                            <div class="img1 text-center">
-                                <img src="./assets/admin/shreyash_kadam_2FoRsTf.jpg" class="card-img-top w-75 mt-2"
-                                    style="border-radius: 50%; padding: 2%" alt="..." />
-                            </div>
-                            <div class="card-body product-details">
-                                <h6>Shreyash Kadam</h6>
-                                <p class="card-text position">
-                                    Administration and Management Coordinator
-                                </p>
-                            </div>
+                </div>   
+                <div class="col-lg-3 col-md-4 col-sm-6 mt-4 store-product Admin justify-content-center">
+                    <div class="card " style="width: 12rem">
+                        <div class="img1 text-center">
+                            <img src="assets/management/Patkar_Rajiv_Jitendra -.JPG" class="card-img-top w-75 mt-2"
+                                style="border-radius: 50%; padding: 2%" alt="..." />
+                        </div>
+                        <div class="card-body product-details">
+                            <h6>Rajiv Patkar</h6>
+                            <p class="card-text position">
+                                Administration and Management Coordinator
+                            </p>
                         </div>
                     </div>
+                </div>
 
-                    <div class="col-lg-3 col-md-4 col-sm-6 mt-4 store-product Admin justify-content-center">
+                <div class="col-lg-3 col-md-4 col-sm-6 mt-4 store-product Admin justify-content-center">
+                    <div class="card " style="width: 12rem">
+                        <div class="img1 text-center">
+                            <img src="assets/management/Sidessh_More.jpg" class="card-img-top w-75 mt-2"
+                                style="border-radius: 50%; padding: 2%" alt="..." />
+                        </div>
+                        <div class="card-body product-details">
+                            <h6>Sidessh More</h6>
+                            <p class="card-text position">
+                                Administration and Management Coordinator
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6 mt-4 store-product Admin justify-content-center">
+                    <div class="card " style="width: 12rem">
+                        <div class="img1 text-center">
+                            <img src="assets/management/nishit.jpeg"
+                                class="card-img-top w-75 mt-2" style="border-radius: 50%; padding: 2%" alt="..." />
+                        </div>
+                        <div class="card-body product-details">
+                            <h6>Nishit Salian</h6>
+                            <p class="card-text position">
+                                Administration and Management Coordinator
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6 mt-4 store-product Admin justify-content-center">
+                    <div class="card " style="width: 12rem">
+                        <div class="img1 text-center">
+                            <img src="assets/management/Sakshi_Sakhare.jpg" class="card-img-top w-75 mt-2"
+                                style="border-radius: 50%; padding: 2%" alt="..." />
+                        </div>
+                        <div class="card-body product-details">
+                            <h6>Sakshi Sakhare</h6>
+                            <p class="card-text position">
+                                Administration and Management Coordinator
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6 mt-4 store-product Admin justify-content-center">
+                    <div class="card " style="width: 12rem">
+                        <div class="img1 text-center">
+                            <img src="assets/management/Kruti_Upasani.jpg" class="card-img-top w-75 mt-2"
+                                style="border-radius: 50%; padding: 2%" alt="..." />
+                        </div>
+                        <div class="card-body product-details">
+                            <h6>Kruti Upasani</h6>
+                            <p class="card-text position">
+                                Administration and Management Coordinator
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </center>
+        </div>
+
+        <!-- Cybersecurity card stucture -->
+
+        <div class="container">
+            <center>
+                <div class="row justify-content-center mx-auto">
+                    <div class="col-lg-3 col-md-4 col-sm-6 mt-4 store-product Cybersecurity justify-content-center">
                         <div class="card " style="width: 12rem">
                             <div class="img1 text-center">
-                                <img src="./assets/admin/khush_patil.jpeg" class="card-img-top w-75 mt-2"
+                                <img src="assets/leads/vedant_Bhamare.jpg" class="card-img-top w-75 mt-2"
+                                    style="border-radius: 50%; padding: 2%" alt="..." />
+                            </div>
+                            <div class="card-body product-details">
+                                <h6>Vedant Bhamare</h6>
+                                <p class="card-text position">Cybersecurity & Blockchain Lead</p>
+                            </div>
+                        </div>
+                    </div>   
+                    <div class="col-lg-3 col-md-4 col-sm-6 mt-4 store-product Cybersecurity justify-content-center">
+                        <div class="card " style="width: 12rem">
+                            <div class="img1 text-center">
+                                <img src="assets/cyber/yash_bhujbal.png" class="card-img-top w-75 mt-2"
+                                    style="border-radius: 50%; padding: 2%" alt="..." />
+                            </div>
+                            <div class="card-body product-details">
+                                <h6>Yash Bhujbal</h6>
+                                <p class="card-text position">Cybersecurity & Blockchain Coordinator</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 mt-4 store-product Cybersecurity justify-content-center">
+                        <div class="card " style="width: 12rem">
+                            <div class="img1 text-center">
+                                <img src="assets/cyber/Sushant_Bhat.jpg" class="card-img-top w-75 mt-2"
+                                    style="border-radius: 50%; padding: 2%" alt="..." />
+                            </div>
+                            <div class="card-body product-details">
+                                <h6>Sushant Bhat</h6>
+                                <p class="card-text position">Cybersecurity & Blockchain Coordinator</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 mt-4 store-product Cybersecurity justify-content-center">
+                        <div class="card " style="width: 12rem">
+                            <div class="img1 text-center">
+                                <img src="assets/cyber/shashank_kharode.jpg" class="card-img-top w-75 mt-2"
+                                    style="border-radius: 50%; padding: 2%" alt="..." />
+                            </div>
+                            <div class="card-body product-details">
+                                <h6>Shashank Kharode</h6>
+                                <p class="card-text position">Cybersecurity & Blockchain Coordinator</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 mt-4 store-product Cybersecurity justify-content-center">
+                        <div class="card " style="width: 12rem">
+                            <div class="img1 text-center">
+                                <img src="assets/cyber/Khush_Patil.png" class="card-img-top w-75 mt-2"
                                     style="border-radius: 50%; padding: 2%" alt="..." />
                             </div>
                             <div class="card-body product-details">
                                 <h6>Khush Patil</h6>
-                                <p class="card-text position">
-                                    Administration and Management Coordinator
-                                </p>
+                                <p class="card-text position">Cybersecurity & Blockchain Coordinator</p>
                             </div>
                         </div>
                     </div>
-
-                    <div class="col-lg-3 col-md-4 col-sm-6 mt-4 store-product Admin justify-content-center">
+                </div>
+            </center>    
+        </div>
+        
+        <!-- programming card structure -->
+        <div class="container">
+            <center>
+                <div class="row Programmings justify-content-center mx-auto">
+                    <div class="col-lg-3 col-md-4 col-sm-6 mt-4 store-product Programming justify-content-center">
                         <div class="card " style="width: 12rem">
                             <div class="img1 text-center">
-                                <img src="./assets/admin/saliannishit_sies_gst_EUxhpLe.jpeg"
-                                    class="card-img-top w-75 mt-2" style="border-radius: 50%; padding: 2%" alt="..." />
-                            </div>
-                            <div class="card-body product-details">
-                                <h6>Nishit Salian</h6>
-                                <p class="card-text position">
-                                    Administration and Management Coordinator
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-4 col-sm-6 mt-4 store-product Admin justify-content-center">
-                        <div class="card " style="width: 12rem">
-                            <div class="img1 text-center">
-                                <img src="./assets/admin/varun sondur.jfif" class="card-img-top w-75 mt-2"
+                                <img src="assets/leads/Varun_Ganesh.webp" class="card-img-top w-75 mt-2"
                                     style="border-radius: 50%; padding: 2%" alt="..." />
                             </div>
                             <div class="card-body product-details">
                                 <h6>Varun Sondur</h6>
                                 <p class="card-text position">
-                                    Administration and Management Coordinator
+                                    Programming Lead
                                 </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6 mt-4 store-product Programming justify-content-center">
+                        <div class="card " style="width: 12rem">
+                            <div class="img1 text-center">
+                                <img src="assets/programming/Aditya_Raul.JPG" class="card-img-top w-75 mt-2"
+                                    style="border-radius: 50%; padding: 2%" alt="..." />
+                            </div>
+                            <div class="card-body product-details">
+                                <h6>Aditya Raul</h6>
+                                <p class="card-text position">
+                                    Programming Coordinator
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6 mt-4 store-product Programming justify-content-center">
+                        <div class="card " style="width: 12rem">
+                            <div class="img1 text-center">
+                                <img src="assets/programming/Kunalraj_Singh.jpg" class="card-img-top w-75 mt-2"
+                                    style="border-radius: 50%; padding: 2%" alt="..." />
+                            </div>
+                            <div class="card-body product-details">
+                                <h6>Kunalraj Singh</h6>
+                                <p class="card-text position">
+                                    Programming Coordinator
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </center> 
+        </div>
+
+        <!-- Content card structure -->
+        <div class="container">
+            <center>
+                <div class="row Heads justify-content-center mx-auto">
+                    <div class="col-lg-3 col-md-4 col-sm-6 mt-4 store-product Content justify-content-center">
+                        <div class="card " style="width: 12rem">
+                            <div class="img1 text-center">
+                                <img src="assets/leads/kritika_pandey.jpeg" class="card-img-top w-75 mt-2"
+                                    style="border-radius: 50%; padding: 2%" alt="..." />
+                            </div>
+                            <div class="card-body product-details">
+                                <h6>Kritika Pandey</h6>
+                                <p class="card-text position">Content Lead</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6 mt-4 store-product Content justify-content-center">
+                        <div class="card " style="width: 12rem">
+                            <div class="img1 text-center">
+                                <img src="assets/content/Shrutishree.jpg" class="card-img-top w-75 mt-2"
+                                    style="border-radius: 50%; padding: 2%" alt="..." />
+                            </div>
+                            <div class="card-body product-details">
+                                <h6>Shrutishree</h6>
+                                <p class="card-text position">Content Coordinator</p>
+                            </div>
+                        </div>
+                    </div>
+
+ 
+                    <div class="col-lg-3 col-md-4 col-sm-6 mt-4 store-product Content justify-content-center">
+                            <div class="card " style="width: 12rem">
+                                <div class="img1 text-center">
+                                    <img src="assets/content/Ayush_Mokal.jpg" class="card-img-top w-75 mt-2"
+                                        style="border-radius: 50%; padding: 2%" alt="..." />
+                                </div>
+                                <div class="card-body product-details">
+                                    <h6>Ayush Mokal</h6>
+                                    <p class="card-text position">Content Coordinator</p>
+                                </div>
+                            </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6 mt-4 store-product Content justify-content-center">
+                        <div class="card " style="width: 12rem">
+                            <div class="img1 text-center">
+                                <img src="assets/content/Shreyoshi_Roy.jpg" class="card-img-top w-75 mt-2"
+                                    style="border-radius: 50%; padding: 2%" alt="..." />
+                            </div>
+                            <div class="card-body product-details">
+                                <h6>Shreyoshi Roy</h6>
+                                <p class="card-text position">Content Coordinator</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </center>
         </div>
+
+        <!-- AR/VR card structure -->
+
+        <div class="container">
+            <center>
+                <div class="row Programmings justify-content-center mx-auto">
+                    <div class="col-lg-3 col-md-4 col-sm-6 mt-4 store-product Ar justify-content-center">
+                        <div class="card " style="width: 12rem">
+                            <div class="img1 text-center">
+                                <img src="assets/leads/kalsishubhjeet.jpg" class="card-img-top w-75 mt-2"
+                                    style="border-radius: 50%; padding: 2%" alt="..." />
+                            </div>
+                            <div class="card-body product-details">
+                                <h6>Shubhjeet</h6>
+                                <p class="card-text position">
+                                    AR / VR Lead
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+
+
     </section>
 
 
@@ -987,10 +1356,9 @@
     </section>
 
     <section class="contact-section" id="contact">
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7543.104394394796!2d73.01942760712097!3d19.03944424643569!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c3db5e2c85cd%3A0xef26c52d7d73816e!2sSIES%20Graduate%20School%20of%20Technology!5e0!3m2!1sen!2sin!4v1597752442292!5m2!1sen!2sin"
-            frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7543.104394394796!2d73.01942760712097!3d19.03944424643569!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c3db5e2c85cd%3A0xef26c52d7d73816e!2sSIES%20Graduate%20School%20of%20Technology!5e0!3m2!1sen!2sin!4v1597752442292!5m2!1sen!2sin"
+                frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></div>
         <div class="container pt-30">
             <div class="contact-info-text">
                 <h3>Keep in touch with us</h3>
@@ -1034,13 +1402,35 @@
                 </div>
                 <div class="col-12 col-md-6 my-2">
                     <h4>
-                        Copyrights 2021 <strong>GDSC SIESGST</strong> | Developed with ❤ by Web Dev Team
+                        Copyrights <span class="year"></span> <strong>GDSC SIESGST</strong> | Developed with ❤ by Web Dev Team
                         DSC SIESGST
                     </h4>
                 </div>
             </div>
         </div>
     </footer>
+    <!-- Dark-mode -->
+    <script>
+        function myFunction() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+         }
+    </script>   
+    <!-- Loader -->
+    <script>
+        var loader = document.getElementById("preloader");
+        window.addEventListener("load", function(){
+            loader.style.display = "none";
+            load.style.fade = "slow";
+        });
+
+    </script>
+
+    <!-- JS query for Copyright Year Get Updated automatically -->
+    <script>
+        const date = new Date();
+        document.querySelector('.year').innerHTML = date.getFullYear();
+    </script>
 
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
