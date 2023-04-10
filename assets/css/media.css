@@ -1,0 +1,19 @@
+@media (max-width: 1150px) {
+  .grad{
+    display: none;
+  }
+  .wall{
+    display: none;
+  }
+  .team{
+    display: none;
+  }
+ 
+}
+
+@media (max-width:500px) {
+  .google, .dev, .club, .student{
+    font-size: 50px;
+    width: 350px;
+  }
+}
